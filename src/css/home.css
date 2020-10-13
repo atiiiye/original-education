@@ -527,6 +527,17 @@ footer.footer {
   font-family: "IRANSans";
 }
 
+footer.footer div.logo_frame {
+  display: flex;
+  justify-content: center;
+  width: 35% !important;
+}
+
+footer.footer div.logo_frame img.home_logo {
+  width: 60px;
+  height: 50px;
+}
+
 footer.footer div.row {
   width: 100%;
   margin: 0;
@@ -537,17 +548,6 @@ footer.footer div.row div.footer-columns {
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-
-footer.footer div.row div.footer-columns div.logo_frame {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-footer.footer div.row div.footer-columns div.logo_frame img.home_logo {
-  width: 60px;
-  height: 50px;
 }
 
 footer.footer div.row div.footer-columns div.footer-links {
@@ -571,10 +571,9 @@ footer.footer div.row div.footer-columns div.footer-links div.footer-title {
 }
 
 footer.footer div.row div.footer-columns div.footer-links span.description {
-  text-align: right;
+  text-align: justify;
   text-justify: inter-ideograph;
   width: 100%;
-  height: 100%;
   font-size: 80%;
   line-height: 1.8rem;
   color: rgba(108, 106, 116, 0.9);
@@ -604,7 +603,13 @@ footer.footer div.row div.footer-columns a.footer-link i {
   margin-left: .5rem;
 }
 
+footer.footer div.row div.footer-columns a.footer-link i.fa-home {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
 footer.footer div.row div.footer-columns a.footer-link span {
   color: rgba(108, 106, 116, 0.9);
+  text-align: justify;
 }
 /*# sourceMappingURL=home.css.map */

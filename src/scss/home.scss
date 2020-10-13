@@ -543,9 +543,21 @@ footer.footer {
     margin-bottom: 1rem;
     font-family: "IRANSans";
 
+    div.logo_frame {
+        display: flex;
+        justify-content: center;
+        width: 35% !important;
+
+        img.home_logo {
+            width: 60px;
+            height: 50px;
+        }
+    }
+
     div.row {
         width: 100%;
         margin: 0;
+
 
         div.footer-columns {
             width: 25%;
@@ -553,16 +565,6 @@ footer.footer {
             align-items: center;
             flex-direction: column;
 
-            div.logo_frame {
-                display: flex;
-                justify-content: center;
-                width: 100%;
-
-                img.home_logo {
-                    width: 60px;
-                    height: 50px;
-                }
-            }
 
 
             div.footer-links {
@@ -592,10 +594,9 @@ footer.footer {
                 // }
 
                 span.description {
-                    text-align: right;
+                    text-align: justify;
                     text-justify: inter-ideograph;
                     width: 100%;
-                    height: 100%;
                     font-size: 80%;
                     line-height: 1.8rem;
                     color: rgba($color: $color-text, $alpha: .9);
@@ -626,8 +627,14 @@ footer.footer {
                     margin-left: .5rem;
                 }
 
+                i.fa-home {
+                    font-size: 1.3rem;
+                    margin-bottom: 1rem;
+                }
+
                 span {
                     color: rgba($color: $color-text, $alpha: .9);
+                    text-align: justify;
                 }
 
             }
