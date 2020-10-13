@@ -221,82 +221,160 @@ body {
   header.header div.top-header div.top-header-left div.top-header-left-btn a.top-header-left-link {
     font-size: 95%;
   }
-  header.header div.navbar {
+  header.header div.navbar.mainmenu {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     font-size: 100%;
-    padding: 1rem;
+    padding-right: 1rem;
     height: 45px;
     background-color: transparent;
     min-height: 45px;
     height: 100%;
   }
-  header.header div.navbar div.navbar-right {
+  header.header div.navbar.mainmenu div.navbar-right {
+    display: flex;
+    justify-content: space-between;
     padding-right: 0;
     width: 100%;
+    height: max-content;
   }
-  header.header div.navbar div.navbar-right div.hamburger-menu.navbar-toggler {
+  header.header div.navbar.mainmenu div.navbar-right div.hamburger-menu.navbar-toggler {
     margin-top: 0;
     position: absolute;
-    top: .7rem;
-    left: .7rem;
-    padding-top: 0;
-    padding-bottom: 0;
-    display: inline-block;
+    top: .5rem;
+    left: .5rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
   }
-  header.header div.navbar div.navbar-right div.hamburger-menu.navbar-toggler span.navbar-toggler-icon {
-    width: 1.8em;
-    height: 1.8em;
+  header.header div.navbar.mainmenu div.navbar-right div.hamburger-menu.navbar-toggler span.navbar-toggler-icon {
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  header.header div.navbar div.navbar-right div.hamburger-menu.navbar-toggler span.change div.menu-line-1 {
+  header.header div.navbar.mainmenu div.navbar-right div.hamburger-menu.navbar-toggler span.change div.menu-line-1 {
     width: 100%;
     height: 4px;
   }
-  header.header div.navbar div.navbar-right div.hamburger-menu.navbar-toggler span.change div.menu-line-2 {
+  header.header div.navbar.mainmenu div.navbar-right div.hamburger-menu.navbar-toggler span.change div.menu-line-2 {
     opacity: 0;
   }
-  header.header div.navbar div.navbar-right div.hamburger-menu.navbar-toggler span.change div.menu-line-3 {
+  header.header div.navbar.mainmenu div.navbar-right div.hamburger-menu.navbar-toggler span.change div.menu-line-3 {
     width: 100%;
     height: 4px;
   }
-  header.header div.navbar div.navbar-right div.hamburger-menu.navbar-toggler span.menu.navbar-toggler-icon {
+  header.header div.navbar.mainmenu div.navbar-right div.hamburger-menu.navbar-toggler span.menu.navbar-toggler-icon {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 5px;
+    padding: 0;
     border-radius: 4px;
   }
-  header.header div.navbar div.navbar-right div.hamburger-menu.navbar-toggler span.menu.navbar-toggler-icon div.menu-line {
+  header.header div.navbar.mainmenu div.navbar-right div.hamburger-menu.navbar-toggler span.menu.navbar-toggler-icon div.menu-line {
     width: 100%;
     height: 4px;
     border-radius: 2px;
     transition: all .3s .3s;
     transform-origin: left;
   }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse {
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse {
     transform: translate(100%, 0);
     transition: transform .5s linear;
-    position: relative;
-    top: 5%;
-    right: -40%;
-    display: none;
   }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse ul.navbar-nav {
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse ul.navbar-nav {
     display: flex;
     align-items: center;
     width: 100%;
   }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse ul.navbar-nav li.nav-item:hover > a.nav-link {
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse ul.navbar-nav div.justify-section {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-right: 1rem;
+  }
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse ul.navbar-nav div.justify-section li.nav-item {
+    width: 100%;
+  }
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse ul.navbar-nav div.justify-section li.nav-item:hover > a.nav-link {
     color: #ff8800;
   }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu#sub-menu-0 {
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse ul.navbar-nav div.justify-section li.nav-item a.nav-link {
+    padding: .6rem;
+    padding-bottom: .45rem;
+    font-size: 90%;
+  }
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse ul.navbar-nav div.justify-section li.nav-item a.nav-link i.fa-home {
+    font-size: 1.2rem;
+    margin-left: .1rem;
+  }
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse ul.navbar-nav div.justify-section li.nav-item.dropdown {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    right: 12%;
+  }
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse ul.navbar-nav div.justify-section li.nav-item.dropdown a.nav-link {
+    padding-top: .8rem;
+    padding-bottom: .7rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 0;
+    padding-right: 0;
+    width: max-content;
+  }
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse ul.navbar-nav div.justify-section li.nav-item.dropdown a.nav-link i.jet-dropdown-arrow {
+    position: relative;
+    margin-right: 4px;
+    top: 2px;
+    transform: rotate(90deg);
+  }
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse ul.navbar-nav div.justify-section li.nav-item.dropdown:hover > a.nav-link > i.jet-dropdown-arrow {
+    transform: rotate(0deg);
+  }
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse ul.navbar-nav div.justify-section li.nav-item.dropdown ul.dropdown-menu#sub-menu-0 {
     margin-top: 0;
-    max-width: 13.9rem;
-    position: absolute;
+    padding-bottom: 0;
+    padding-top: 0;
+    width: 11rem;
+    max-width: 13rem;
+    top: 45px;
+    font-size: 93%;
+    position: static;
+    float: none;
+  }
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse ul.navbar-nav div.justify-section li.nav-item.dropdown ul.dropdown-menu#sub-menu-0 li.list-item {
+    position: relative;
+  }
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse ul.navbar-nav div.justify-section li.nav-item.dropdown ul.dropdown-menu#sub-menu-0 li.list-item a.dropdown-item {
+    font-size: 90%;
+    padding-right: .75rem;
+  }
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse ul.navbar-nav div.justify-section li.nav-item.dropdown ul.dropdown-menu#sub-menu-0 li.list-item ul.dropdown-menu#sub-menu-1 li.dropdown-item {
+    padding: 0;
+  }
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse ul.navbar-nav div.justify-section li.nav-item.dropdown ul.dropdown-menu#sub-menu-0 li.list-item ul.dropdown-menu#sub-menu-1 li.dropdown-item a.dropdown-item {
+    font-size: 90%;
+    padding-right: .75rem;
+  }
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse ul.navbar-nav div.justify-section li.nav-item.dropdown ul.dropdown-menu.show#sub-menu-0 {
+    margin-top: 0;
     right: 1px;
   }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu#sub-menu-0 li.list-item.dropdown.show ul#sub-menu-1 {
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse ul.navbar-nav div.justify-section li.nav-item.dropdown ul.dropdown-menu.show#sub-menu-0 li.list-item.dropdown i.jet-dropdown-arrow {
+    transform: rotate(90deg);
+  }
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse ul.navbar-nav div.justify-section li.nav-item.dropdown ul.dropdown-menu.show#sub-menu-0 li.list-item.dropdown.show ul#sub-menu-1 {
     display: flex;
     flex-direction: column;
     padding-top: 0;
@@ -307,139 +385,118 @@ body {
     width: 10rem;
     right: 10.85rem;
   }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu#sub-menu-0 li.list-item a.dropdown-item {
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse ul.navbar-nav div.justify-section li.nav-item.dropdown ul.dropdown-menu.show#sub-menu-0 li.list-item.dropdown.show i.jet-dropdown-arrow {
+    transform: rotate(0deg);
+  }
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse ul.navbar-nav div.justify-section li.nav-item.dropdown ul.dropdown-menu.show#sub-menu-0 li.list-item a.dropdown-item {
     font-size: 90%;
   }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu#sub-menu-0 li.list-item a.dropdown-item i.jet-dropdown-arrow {
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse ul.navbar-nav div.justify-section li.nav-item.dropdown ul.dropdown-menu.show#sub-menu-0 li.list-item a.dropdown-item i.jet-dropdown-arrow {
     padding-right: 1px;
     position: relative;
     bottom: -2px;
   }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse ul.navbar-nav li.nav-item ul.dropdown-menu#sub-menu-0 li.list-item ul.dropdown-menu#sub-menu-1 {
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse ul.navbar-nav div.justify-section li.nav-item.dropdown ul.dropdown-menu.show#sub-menu-0 li.list-item ul.dropdown-menu#sub-menu-1 {
     display: none;
   }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse ul.navbar-nav li.nav-item a.nav-link {
-    padding: .6rem;
-    padding-bottom: .45rem;
-    font-size: 90%;
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse ul.navbar-nav div.justify-section li.nav-item.dropdown.show {
+    width: max-content;
   }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse ul.navbar-nav li.nav-item a.nav-link i.fa-home {
-    font-size: 1.2rem;
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse ul.navbar-nav div.justify-section li.nav-item.dropdown.show i.jet-dropdown-arrow {
+    transform: rotate(0deg);
   }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown i.jet-dropdown-arrow {
-    position: relative;
-    top: 2px;
-  }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu {
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-top: 0;
-    width: 11rem;
-    right: 0px;
-    top: 45px;
-    text-align: right;
-    font-size: 93%;
-    position: static;
-    float: none;
-    right: 6.9rem;
-  }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu li.list-item {
-    position: relative;
-  }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu li.list-item a.dropdown-item {
-    font-size: 90%;
-    padding-right: .75rem;
-  }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu li.list-item ul.dropdown-menu#sub-menu-1 li.dropdown-item {
-    padding: 0;
-  }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu li.list-item ul.dropdown-menu#sub-menu-1 li.dropdown-item a.dropdown-item {
-    font-size: 90%;
-    padding-right: .75rem;
-  }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown ul#monitor {
-    top: .7rem;
-    right: 7.3rem;
-    width: 10rem;
-  }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown ul#users {
-    top: .7rem;
-    right: 4rem;
-    width: 10rem;
-  }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown ul#namabar {
-    top: .7rem;
-    right: 3.1rem;
-    width: 10rem;
-  }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown ul#charts {
-    top: .7rem;
-    right: 4.4rem;
-    width: 10rem;
-  }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown ul#reports {
-    top: .7rem;
-    right: 4.9rem;
-    width: 10rem;
-  }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown ul#tel {
-    top: .7rem;
-    right: 4.9rem;
-    width: 10rem;
-  }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown ul#settings {
-    top: .7rem;
-    right: 4.6rem;
-    width: 10rem;
-    font-size: 90%;
-  }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown ul#sub-menu-0 {
-    top: .7rem;
-    position: static;
-    float: none;
-  }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown a.nav-link {
-    padding-top: .8rem;
-    padding-bottom: .7rem;
-  }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse ul.navbar-nav li.nav-item.dropdown.show li.list-item.dropdown ul#sub-menu-1 {
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse ul.navbar-nav div.justify-section li.nav-item.dropdown.show li.list-item.dropdown ul#sub-menu-1 {
     display: none;
   }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse img.logo {
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse img.logo {
     width: 100px;
     height: 80%;
   }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse.show {
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse.show {
     transform: translate(0, 0);
     transition: transform .5s linear;
     display: flex;
-    width: 100%;
+    width: max-content;
     flex-direction: column-reverse;
+    position: relative;
+    top: 5%;
+    right: -45%;
   }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse.show ul.navbar-nav {
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse.show ul.navbar-nav {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 30%;
+    width: 100%;
   }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapse.show ul.navbar-nav li.nav-item {
-    text-align: right;
-    width: 150px;
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse.show ul.navbar-nav li.nav-item {
+    width: max-content;
     display: flex;
     align-items: center;
     justify-content: flex-start;
   }
-  header.header div.navbar div.navbar-right div.collapse.navbar-collapsing {
+  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapsing {
     transform: translate(100%, 0);
     transition: transform .5s linear;
     display: flex;
-    position: relative;
-    top: 5%;
-    right: -40%;
   }
-  header.header div.navbar-left img.logo {
+  header.header div.navbar.mainmenu div.navbar-left img.logo {
     width: 65px;
     height: 100%;
+  }
+  section.contents section.main-content.container {
+    width: 100%;
+  }
+  section.contents section.main-content.container div.section-title {
+    margin: 1rem;
+  }
+  section.contents section.main-content.container div.section-title h3.h3 {
+    font-size: 2.5rem;
+  }
+  section.contents section.main-content.container div.section-title h4.text-muted.lead {
+    font-size: 85%;
+  }
+  section.contents section.main-content.container div.card {
+    width: 100%;
+    height: 370px;
+    margin: .2rem 0 1rem;
+    padding: 0rem;
+  }
+  section.contents section.main-content.container div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag {
+    width: 100%;
+    height: 100%;
+  }
+  section.contents section.main-content.container div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer {
+    width: 100%;
+  }
+  section.contents section.main-content.container div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage {
+    width: 50%;
+  }
+  section.contents section.main-content.container div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  section.contents section.main-content.container div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item img.image-slide {
+    width: 100%;
+    height: 100%;
+  }
+  section.contents section.main-content.container div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.center {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  section.contents section.main-content.container div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-dots {
+    width: 100%;
+    height: 10%;
+    margin-top: 0;
+    position: absolute;
+    bottom: 0rem;
+  }
+  section.contents section.main-content.container div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-dots button.owl-dot {
+    width: 35px;
+    height: 8px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in;
+    margin: 0 8px;
+    outline: none;
   }
 }
 /*# sourceMappingURL=mediaHome.css.map */

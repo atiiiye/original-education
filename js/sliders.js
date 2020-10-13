@@ -1,13 +1,11 @@
 $(document).ready(function () {
-  let gallery = document.querySelector("div.img-gallery.owl-carousel");
-  console.log(gallery);
-  $(".img-gallery").owlCarousel({
+  $("#img-gallery").owlCarousel({
     rtl: true,
     nav: false,
     items: 3,
     dots: true,
     center: true,
-    autoplay: true,
+    // autoplay: true,
     autoplayTimeout: 3000,
     loop: true,
     lazyLoad: true,
