@@ -360,23 +360,23 @@
 
                             li.nav-item {
                                 width: 100%;
-    
+
                                 &:hover>a.nav-link {
                                     color: $color-orange-medium;
                                 }
-    
+
                                 a.nav-link {
                                     padding: .6rem;
                                     padding-bottom: .45rem;
                                     font-size: 90%;
-    
+
                                     i.fa-home {
                                         font-size: 1.2rem;
                                         margin-left: .1rem;
                                     }
                                 }
                             }
-    
+
                             li.nav-item.dropdown {
                                 width: max-content;
                                 display: flex;
@@ -384,7 +384,7 @@
                                 justify-content: flex-start;
                                 position: relative;
                                 right: 12%;
-    
+
                                 a.nav-link {
                                     padding-top: .8rem;
                                     padding-bottom: .7rem;
@@ -394,7 +394,7 @@
                                     padding-left: 0;
                                     padding-right: 0;
                                     width: max-content;
-    
+
                                     i.jet-dropdown-arrow {
                                         position: relative;
                                         margin-right: 4px;
@@ -402,12 +402,12 @@
                                         transform: rotate(90deg);
                                     }
                                 }
-    
+
                                 &:hover>a.nav-link>i.jet-dropdown-arrow {
                                     transform: rotate(0deg);
                                 }
-    
-    
+
+
                                 ul.dropdown-menu#sub-menu-0 {
                                     margin-top: 0;
                                     padding-bottom: 0;
@@ -418,43 +418,43 @@
                                     font-size: 93%;
                                     position: static;
                                     float: none;
-    
+
                                     li.list-item {
                                         position: relative;
-    
+
                                         a.dropdown-item {
                                             font-size: 90%;
                                             padding-right: .75rem;
-    
+
                                             i.jet-dropdown-arrow {}
                                         }
-    
+
                                         ul.dropdown-menu#sub-menu-1 {
                                             li.dropdown-item {
                                                 padding: 0;
-    
+
                                                 a.dropdown-item {
                                                     font-size: 90%;
                                                     padding-right: .75rem;
-    
+
                                                     i.jet-dropdown-arrow {}
                                                 }
                                             }
                                         }
                                     }
                                 }
-    
-    
+
+
                                 ul.dropdown-menu.show#sub-menu-0 {
                                     margin-top: 0;
                                     right: 1px;
-    
+
                                     li.list-item.dropdown {
                                         i.jet-dropdown-arrow {
                                             transform: rotate(90deg);
                                         }
                                     }
-    
+
                                     li.list-item.dropdown.show {
                                         ul#sub-menu-1 {
                                             display: flex;
@@ -467,39 +467,39 @@
                                             width: 10rem;
                                             right: 10.85rem;
                                         }
-    
+
                                         i.jet-dropdown-arrow {
                                             transform: rotate(0deg);
                                         }
                                     }
-    
+
                                     li.list-item {
                                         a.dropdown-item {
                                             font-size: 90%;
-    
+
                                             i.jet-dropdown-arrow {
                                                 padding-right: 1px;
                                                 position: relative;
                                                 bottom: -2px;
                                             }
                                         }
-    
+
                                         ul.dropdown-menu#sub-menu-1 {
                                             display: none;
-    
+
                                             li.dropdown-item {}
                                         }
                                     }
                                 }
                             }
-    
+
                             li.nav-item.dropdown.show {
                                 width: max-content;
-    
+
                                 i.jet-dropdown-arrow {
                                     transform: rotate(0deg);
                                 }
-    
+
                                 li.list-item.dropdown {
                                     ul#sub-menu-1 {
                                         display: none;
@@ -520,7 +520,7 @@
                     transform: translate(0, 0);
                     transition: transform .5s linear;
                     display: flex;
-                    width: max-content;
+                    width: 100%;
                     flex-direction: column-reverse;
                     position: relative;
                     top: 5%;

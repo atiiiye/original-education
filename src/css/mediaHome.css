@@ -416,7 +416,7 @@ body {
     transform: translate(0, 0);
     transition: transform .5s linear;
     display: flex;
-    width: max-content;
+    width: 100%;
     flex-direction: column-reverse;
     position: relative;
     top: 5%;

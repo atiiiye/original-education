@@ -345,6 +345,12 @@ header.header div.navbar div.navbar-left img.logo {
   height: 100%;
 }
 
+section.contents {
+  width: 100%;
+  margin-bottom: 1rem;
+  font-family: "IRANSans";
+}
+
 section.contents section.main-content.container-fluid {
   width: 100%;
   padding: 1rem;
@@ -352,14 +358,17 @@ section.contents section.main-content.container-fluid {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 section.contents section.main-content.container-fluid div.section-title {
+  background-color: #e0e0e0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 1rem;
+  padding: 1rem;
+  width: 100%;
 }
 
 section.contents section.main-content.container-fluid div.section-title h3.h3 {
@@ -437,7 +446,6 @@ section.contents section.main-content.container-fluid div.card div.img-gallery.o
   align-items: flex-end;
   position: absolute;
   bottom: -1rem;
-  border-bottom: 1px solid rgba(224, 224, 224, 0.7);
 }
 
 section.contents section.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-dots button.owl-dot {
@@ -457,5 +465,146 @@ section.contents section.main-content.container-fluid div.card div.img-gallery.o
 section.contents section.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-dots button.owl-dot.active {
   box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.07);
   background: #ff8800;
+}
+
+section.contents section.section-3 {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.contents section.section-3 div.counters {
+  background-color: #2c2b31;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.contents section.section-3 div.counters div.milestone_col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.contents section.section-3 div.counters div.milestone_col div.milestone {
+  width: 100%;
+}
+
+section.contents section.section-3 div.counters div.milestone_col div.milestone div.milestone_icon {
+  display: inline-block;
+  height: 81px;
+  width: 81px;
+}
+
+section.contents section.section-3 div.counters div.milestone_col div.milestone div.milestone_icon img {
+  width: 100%;
+  height: 100%;
+}
+
+section.contents section.section-3 div.counters div.milestone_col div.milestone div.milestone_counter {
+  font-size: 200%;
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 0.75;
+  margin-top: 2rem;
+}
+
+section.contents section.section-3 div.counters div.milestone_col div.milestone div.milestone_text {
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-top: 1.5rem;
+  line-height: 0.75;
+}
+
+footer.footer {
+  width: 100%;
+  height: 50%;
+  margin-bottom: 1rem;
+  font-family: "IRANSans";
+}
+
+footer.footer div.row {
+  width: 100%;
+  margin: 0;
+}
+
+footer.footer div.row div.footer-columns {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer.footer div.row div.footer-columns div.logo_frame {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+footer.footer div.row div.footer-columns div.logo_frame img.home_logo {
+  width: 60px;
+  height: 50px;
+}
+
+footer.footer div.row div.footer-columns div.footer-links {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer.footer div.row div.footer-columns div.footer-links div.footer-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 85%;
+  color: #2c2b31;
+  margin-bottom: 1rem;
+}
+
+footer.footer div.row div.footer-columns div.footer-links span.description {
+  text-align: right;
+  text-justify: inter-ideograph;
+  width: 100%;
+  height: 100%;
+  font-size: 80%;
+  line-height: 1.8rem;
+  color: rgba(108, 106, 116, 0.9);
+}
+
+footer.footer div.row div.footer-columns a.footer-link {
+  display: flex;
+  font-size: 80%;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(108, 106, 116, 0.9);
+  text-decoration: none;
+  line-height: 1.8rem;
+}
+
+footer.footer div.row div.footer-columns a.footer-link:focus {
+  outline: none;
+}
+
+footer.footer div.row div.footer-columns a.footer-link:hover {
+  color: #ff6600;
+}
+
+footer.footer div.row div.footer-columns a.footer-link i {
+  color: #ff6600;
+  font-size: 1rem;
+  margin-left: .5rem;
+}
+
+footer.footer div.row div.footer-columns a.footer-link span {
+  color: rgba(108, 106, 116, 0.9);
 }
 /*# sourceMappingURL=home.css.map */
