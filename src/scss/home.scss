@@ -487,238 +487,89 @@ section.contents {
 
     }
 
-    section.section-3 {
+    section.section-2 {
         width: 100%;
         padding: 1rem;
         display: flex;
         align-items: center;
         justify-content: center;
 
-        div.counters {
-            background-color: rgba($color: $color-header, $alpha: 1.0);
-            width: 100%;
-            height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            div.milestone_col {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                div.milestone {
-                    width: 100%;
-
-                    div.milestone_icon {
-                        display: inline-block;
-                        height: 81px;
-                        width: 81px;
-
-                        img {
-                            width: 100%;
-                            height: 100%;
-                        }
-                    }
-
-                    div.milestone_counter {
-                        font-size: 200%;
-                        font-weight: 500;
-                        color: #FFFFFF;
-                        line-height: 0.75;
-                        margin-top: 2rem;
-                    }
-
-                    div.milestone_text {
-                        font-weight: 500;
-                        color: #FFFFFF;
-                        margin-top: 1.5rem;
-                        line-height: 0.75;
-                    }
-                }
-            }
-        }
-    }
-
-    section.section-4 {
-        width: 100%;
-        padding: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgba($color:$color-light-2, $alpha: 1.0);
-
-        div.cards-gallery {
+        div.video-gallery.owl-carousel.owl-theme {
             width: 100%;
 
             div.owl-stage-outer {
                 width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
 
                 div.owl-stage {
-                    width: 100% !important;
-
-                    div.owl-item.active,
                     div.owl-item {
                         width: 100% !important;
 
-                        div.card-deck {
+                        div.slide-video {
+                            display: flex;
                             width: 100%;
 
-                            div.card.card-course {
-                                width: 90%;
-                                min-height: 100%;
-                                margin: 1rem;
-                                border: 1px solid rgba($color: $color-header, $alpha: .4);
+                            span.text-video {
+                                width: 40%;
                                 display: flex;
-                                flex-direction: column;
-                                // justify-content: space-between;
-                                // background-color: rgba($color:$color-navbar, $alpha: 1.0);
+                                justify-content: center;
+                                align-items: center;
+                                margin-left: 2%;
+                                // margin-right: 2%;
+                                font-size: 95%;
+                                text-align: justify;
+                            }
 
-                                &:hover>div.card-body {
-                                    background-color: rgba($color:$color-navbar, $alpha: 1.0);
+                            div.ckin__player.default.ckin__overlay {
+                                width: 45%;
+                                // height: 420px;
+                                background: rgba($color: $color-light-2, $alpha: 1.0);
+                                border: 1px solid rgba($color: #000000, $alpha: .8);
+                                // position: relative;
+                                // display: flex;
+                                // direction: ltr;
+                                // transition: .2s all;
+
+                                &::before,
+                                &::after {
+                                    background: rgba($color: $color-light, $alpha: 1.0);
+                                    z-index: -1;
+                                    position: absolute;
+                                    content: "";
+                                    bottom: 15px;
+                                    left: 8px;
+                                    top: 80%;
+                                    width: 50%;
+                                    max-width: 300px;
+                                    box-shadow: 0 12px 10px .2rem rgba(0, 0, 0, 0.7);
+                                    transform: rotate(-3deg);
                                 }
 
-                                &:hover>div.card-body>h5.card-title {
-                                    color: rgba($color:$color-orange-light, $alpha: 1.0);
+                                &::after {
+                                    transform: rotate(3deg);
+                                    right: 8px;
+                                    left: auto;
                                 }
 
-                                &:hover>img.card-img-top.image-card-slider {
-                                    transform: scale(1);
-                                    transition: all .3s linear;
-                                    opacity: 1;
-                                }
+                                video {}
 
-                                img.card-img-top.image-card-slider {
-                                    width: 100%;
-                                    height: 300px;
-                                    opacity: .8;
-                                    transform: scale(.9);
-                                }
-
-                                div.card-body {
-                                    width: 100%;
-                                    display: flex;
-                                    flex-direction: column;
-                                    justify-content: flex-start;
-                                    align-items: center;
-
-                                    h5.card-title {
-                                        width: 100%;
-                                        font-weight: bold;
-                                        display: flex;
-                                        justify-content: center;
-                                    }
-
-                                    div.buttons-card {
-                                        width: 85%;
-                                        display: flex;
-                                        justify-content: center;
-                                        align-items: center;
-
-                                        button.btn {
-                                            width: 45%;
-                                        }
-
-                                        button.btn.register {
-                                            border: 1px solid rgba($color: $color-orange-light, $alpha: 1.0);
-                                            color: rgba($color: $color-orange-light, $alpha: 1.0);
-                                            margin-left: 1rem;
-
-                                            &:hover,
-                                            &:focus {
-                                                color: rgba($color: $color-light, $alpha: 1.0);
-                                                background-color: rgba($color: $color-orange-light, $alpha: 1.0);
-                                            }
-
-                                            &:focus {
-                                                box-shadow: 0px 0px 6px 4px rgba($color: $color-orange-medium, $alpha: .5);
-                                            }
-                                        }
-                                    }
-
-                                    div.teacher {
-                                        svg {
-                                            fill: rgba($color: $color-dark, $alpha: 1.0);
-                                        }
-
-                                        span.teacher-name {
-                                            font-size: 95%;
-
-                                        }
-                                    }
-
-                                    div.price {
-                                        width: 50%;
-                                        display: flex;
-                                        justify-content: center;
-                                        align-items: center;
-                                        height: 40px;
-
-                                        del.price-original {
-                                            font-size: 80%;
-                                            width: max-content;
-                                            color: rgba($color: $color-header-text, $alpha: 1.0);
-                                            border-left: 1px solid rgba($color: $color-header-text, $alpha: 1.0);
-                                            margin-left: .5rem;
-                                            padding-left: .5rem;
-                                        }
-
-                                        span.price-sale {
-                                            margin-right: .5rem;
-                                            font-size: 90%;
-                                        }
-                                    }
-
-                                    div.date {
-                                        width: 100%;
-                                        display: flex;
-                                        justify-content: center;
-                                        align-items: center;
-                                        height: 40px;
-
-                                        span.date-text {
-                                            font-size: 90%;
-                                            font-weight: bold;
-                                            color: rgba($color: $color-header-text, $alpha: 1.0);
-                                        }
-
-                                        i {
-                                            margin-left: .4rem;
-                                            font-size: 24px;
-                                            color: rgba($color: $color-header-text, $alpha: 1.0);
-                                        }
-                                    }
-
-                                    div.time {
-                                        width: 100%;
-                                        height: 40px;
-                                        display: flex;
-                                        justify-content: center;
-
-                                        align-items: center;
-
-                                        i {
-                                            margin-left: .4rem;
-                                            font-size: 20px;
-                                            color: rgba($color: $color-header-text, $alpha: 1.0);
-                                        }
-
-                                        span.time-text {
-                                            font-size: 90%;
-                                            font-weight: bold;
-                                            color: rgba($color: $color-header-text, $alpha: 1.0);
-                                        }
-                                    }
+                                button.default__button--big.toggle {
+                                    i.ckin-play {}
                                 }
                             }
+
                         }
                     }
-
                 }
-
             }
 
             div.owl-nav {
+                width: 5%;
+                z-index: 10;
+
                 button.owl-prev {
                     color: $color-header;
                     position: absolute;
@@ -766,7 +617,367 @@ section.contents {
             }
         }
     }
+
+    section.section-3 {
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        div.counters {
+            background-color: rgba($color: $color-header, $alpha: 1.0);
+            width: 100%;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            div.partition {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                width: 100%;
+
+                div.milestone_col {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    div.milestone {
+                        width: 100%;
+
+                        div.milestone_icon {
+                            display: inline-block;
+                            height: 81px;
+                            width: 81px;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+
+                        div.milestone_counter {
+                            font-size: 200%;
+                            font-weight: 500;
+                            color: #FFFFFF;
+                            line-height: 0.75;
+                            margin-top: 2rem;
+                        }
+
+                        div.milestone_text {
+                            font-weight: 500;
+                            color: #FFFFFF;
+                            margin-top: 1.5rem;
+                            line-height: 0.75;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    section.section-4 {
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba($color:$color-light-2, $alpha: 1.0);
+
+        div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+
+            div.owl-stage-outer {
+                // width: 100%;
+
+                div.owl-stage {
+                    width: 100% !important;
+
+                    div.owl-item {
+                        // width: 100% !important;
+
+                        div.rows {
+                            width: 100%;
+                            // display: flex;
+                            // flex-direction: row;
+                            padding: 0;
+                            margin: 0;
+
+                            div.card.card-course {
+                                // width: 23%;
+                                min-height: 100%;
+                                margin: 1rem;
+                                // border: 1px solid rgba($color: $color-header, $alpha: .4);
+                                // justify-content: space-between;
+                                display: flex;
+                                flex-direction: column;
+                                background-color: rgba($color:$color-light, $alpha: 1.0);
+                                overflow: hidden;
+
+
+                                &:hover {
+                                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.25);
+
+                                }
+
+                                &:hover>div.card-body {
+                                    background-color: rgba($color:$color-navbar, $alpha: .6);
+                                }
+
+                                &:hover>div.card-body>div.parents-elem>h5.card-title {
+                                    color: rgba($color:$color-yellow, $alpha: 1.0);
+                                }
+
+                                &:hover>div.card-body>div.parents-elem>div.Capacity {
+                                    background-color: rgba($color: $color-blue-dark, $alpha: 1.0);
+                                    color: rgba($color:$color-yellow, $alpha: 1.0);
+                                }
+
+                                &:hover>img.card-img-top.image-card-slider {
+                                    transform: scale(1.1);
+                                    transition: all .3s linear;
+                                    opacity: 1;
+                                }
+
+                                img.card-img-top.image-card-slider {
+                                    width: 100%;
+                                    height: 220px;
+                                    opacity: .8;
+                                    transform: scale(1);
+                                }
+
+                                div.card-body {
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: flex-start;
+                                    align-items: center;
+
+
+                                    div.parents-elem {
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        height: 230px;
+                                        width: 100%;
+
+                                        div.Capacity {
+
+                                            background-color: rgba($color: $color-yellow, $alpha: 1.0);
+                                            color: rgba($color:$color-blue-dark, $alpha: 1.0);
+                                            width: max-content;
+                                            border-radius: 28px;
+                                            position: relative;
+                                            top: -15%;
+                                            right: -35%;
+                                            padding: .7rem .5rem;
+                                            font-size: 80%;
+                                            font-weight: bold;
+
+
+
+                                            &:hover {
+                                                background-color: rgba($color: $color-yellow, $alpha: 1.0);
+                                                color: rgba($color:$color-blue-dark, $alpha: 1.0);
+                                            }
+
+
+                                        }
+
+                                        h5.card-title {
+                                            width: 100%;
+                                            font-weight: bold;
+                                            display: flex;
+                                            justify-content: center;
+                                        }
+
+                                        div.buttons-card {
+                                            width: 85%;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            height: max-content;
+
+                                            button.btn {
+                                                width: 45%;
+                                            }
+
+                                            button.btn.register {
+                                                border: 1px solid rgba($color: $color-yellow, $alpha: 1.0);
+                                                // color: rgba($color: $color-orange-light, $alpha: 1.0);
+                                                margin-left: 1rem;
+                                                color: rgba($color: $color-light, $alpha: 1.0);
+                                                background-color: rgba($color: $color-yellow, $alpha: 1.0);
+
+                                                // &:hover,
+                                                // &:focus {
+                                                //     color: rgba($color: $color-light, $alpha: 1.0);
+                                                //     background-color: rgba($color: $color-yellow, $alpha: 1.0);
+                                                // }
+
+                                                &:focus,
+                                                &:hover {
+                                                    box-shadow: 0px 0px 6px 2px rgba($color: $color-orange-light, $alpha: .5);
+                                                }
+                                            }
+
+                                            button.btn.view {
+                                                color: rgba($color: $color-light, $alpha: 1.0);
+                                                border: 1px solid rgba($color: $color-header-text, $alpha: .5);
+                                                background-color: rgba($color: $color-header-text, $alpha: 1.0);
+
+                                                &:focus,
+                                                &:hover {
+                                                    box-shadow: 0px 0px 6px 2px rgba($color: $color-header-text, $alpha: .5);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                div.teacher {
+                                    svg {
+                                        fill: rgba($color: $color-dark, $alpha: 1.0);
+                                    }
+
+                                    span.teacher-name {
+                                        font-size: 90%;
+
+                                    }
+                                }
+
+                                div.price {
+                                    width: 50%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    // height: 40px;
+
+                                    del.price-original {
+                                        font-size: 80%;
+                                        width: max-content;
+                                        color: rgba($color: $color-header-text, $alpha: 1.0);
+                                        border-left: 1px solid rgba($color: $color-header-text, $alpha: 1.0);
+                                        margin-left: .5rem;
+                                        padding-left: .5rem;
+                                    }
+
+                                    span.price-sale {
+                                        margin-right: .5rem;
+                                        font-size: 85%;
+                                    }
+                                }
+
+                                div.date {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    // height: 40px;
+
+                                    span.date-text {
+                                        font-size: 90%;
+                                        font-weight: bold;
+                                        color: rgba($color: $color-header-text, $alpha: 1.0);
+                                    }
+
+                                    i {
+                                        margin-left: .4rem;
+                                        font-size: 22px;
+                                        color: rgba($color: $color-header-text, $alpha: 1.0);
+                                    }
+                                }
+
+                                div.time {
+                                    width: 100%;
+                                    // height: 40px;
+                                    display: flex;
+                                    justify-content: center;
+
+                                    align-items: center;
+
+                                    i {
+                                        margin-left: .4rem;
+                                        font-size: 20px;
+                                        color: rgba($color: $color-header-text, $alpha: 1.0);
+                                    }
+
+                                    span.time-text {
+                                        font-size: 90%;
+                                        font-weight: bold;
+                                        color: rgba($color: $color-header-text, $alpha: 1.0);
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+
+                }
+            }
+
+            div.owl-nav {
+                width: 5%;
+                z-index: 10;
+
+                button.owl-prev {
+                    color: $color-header;
+                    position: absolute;
+                    top: 50%;
+                    left: 2%;
+                    border: none;
+                    border-color: transparent;
+
+                    &:focus,
+                    &:active {
+                        border: none;
+                        outline: none;
+                        border-color: transparent !important;
+                    }
+
+                    i.fa.fa-angle-left {
+                        font-size: 36px;
+                    }
+                }
+
+                button.owl-next {
+                    color: $color-header;
+                    position: absolute;
+                    top: 50%;
+                    right: 2%;
+                    border: none;
+                    border-color: transparent;
+
+                    &:focus,
+                    &:active {
+                        border: none;
+                        outline: none;
+                        border-color: transparent !important;
+                    }
+
+                    i.fa.fa-angle-right {
+                        font-size: 36px;
+                    }
+                }
+
+                button.owl-next.disabled,
+                button.owl-prev.disabled {
+                    opacity: .4;
+                }
+            }
+
+        }
+
+    }
 }
+
 
 footer.footer {
     width: 100%;
@@ -795,6 +1006,7 @@ footer.footer {
             display: flex;
             align-items: center;
             flex-direction: column;
+
 
 
 
@@ -914,6 +1126,141 @@ footer.footer {
                     text-align: justify;
                 }
 
+            }
+        }
+
+        div.partition {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            // width: 50%;
+
+            div.footer-columns {
+                width: 25%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+
+
+
+                div.footer-links {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-start;
+
+
+                    div.footer-title {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        font-size: 85%;
+                        color: rgba($color: $color-header, $alpha: 1.0);
+                        margin-bottom: 1rem;
+
+                    }
+
+                    span.description {
+                        text-align: justify;
+                        width: 100%;
+                        font-size: 80%;
+                        line-height: 1.8rem;
+                        color: rgba($color: $color-text, $alpha: .9);
+                    }
+
+                    div.social-medias {
+                        width: 100%;
+                        height: 30px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        a.social-media {
+                            text-decoration: none;
+                            color: rgba($color: $color-orange-dark, $alpha: 1.0);
+                            display: flex;
+                            width: 10%;
+                            height: max-content;
+
+                            &:hover {
+                                color: rgba($color: $color-text, $alpha: .9);
+                            }
+
+                            &:focus {
+                                outline: none;
+                            }
+
+
+                            i.social-media-icon {
+                                font-size: 18px;
+                            }
+
+                        }
+                    }
+                }
+
+                a.footer-link {
+                    display: flex;
+                    font-size: 80%;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: rgba($color: $color-text, $alpha: .9);
+                    text-decoration: none;
+                    line-height: 1.8rem;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    &:hover {
+                        color: rgba($color: $color-orange-dark, $alpha: 1.0);
+                    }
+                }
+
+                div.footer-link {
+                    display: flex;
+                    font-size: 80%;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: rgba($color: $color-text, $alpha: .9);
+                    text-decoration: none;
+                    line-height: 1.8rem;
+
+                    i {
+                        color: rgba($color: $color-orange-dark, $alpha: 1.0);
+                        font-size: 1rem;
+                        margin-left: .5rem;
+
+                        &:hover {
+                            color: rgba($color: $color-text, $alpha: .9);
+                        }
+                    }
+
+                    svg {
+                        fill: rgba($color: $color-orange-dark, $alpha: 1.0);
+                        margin-left: .5rem;
+
+                        &:hover {
+                            fill: rgba($color: $color-text, $alpha: .9);
+                        }
+                    }
+
+                    i.fa-home {
+                        font-size: 1.3rem;
+                        margin-bottom: 1rem;
+                    }
+
+                    span {
+                        color: rgba($color: $color-text, $alpha: .9);
+                        text-align: justify;
+                    }
+
+                }
             }
         }
     }

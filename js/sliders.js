@@ -5,7 +5,7 @@ $(document).ready(function () {
     items: 3,
     dots: true,
     center: true,
-    // autoplay: true,
+    autoplay: true,
     autoplayTimeout: 3000,
     loop: true,
     lazyLoad: true,
@@ -31,16 +31,17 @@ $(document).ready(function () {
       '<i class="fa fa-angle-right"></i>',
     ],
   });
- 
+
   $("#cards-gallery").owlCarousel({
     rtl: true,
     nav: true,
-    items: 4,
+    items: 3,
+    autoplay: true,
     dots: false,
     center: false,
-    // autoplay: true,
-    // autoplayTimeout: 5000,
-    // loop: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    lazyLoad: true,
     navText: [
       '<i class="fas fa-arrow-left"></i>',
       '<i class="fas fa-arrow-right"></i>',
@@ -48,11 +49,20 @@ $(document).ready(function () {
     responsive: {
       0: {
         items: 1,
+        nav: true
       },
       768: {
+        loop: true,
         items: 2,
+        nav: true
+      },
+      991: {
+        items: 3,
+        nav: true
       },
     },
+
   });
-});
+
+})
 
