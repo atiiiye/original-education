@@ -120,7 +120,8 @@ header.header div.navbar {
   padding: 0 1rem;
   background-color: #fff;
   height: 50px;
-  margin-bottom: 1rem;
+  margin-bottom: .8rem;
+  margin-top: .8rem;
 }
 
 header.header div.navbar div.navbar-right {
@@ -340,6 +341,12 @@ header.header div.navbar div.navbar-right div.collapse img.logo {
   height: 100%;
 }
 
+header.header div.navbar div.navbar-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 header.header div.navbar div.navbar-left img.logo {
   width: 65px;
   height: 100%;
@@ -351,7 +358,7 @@ section.contents {
   font-family: "IRANSans";
 }
 
-section.contents section.main-content.container-fluid {
+section.contents section.section-1.main-content.container-fluid {
   width: 100%;
   padding: 1rem;
   display: flex;
@@ -361,7 +368,7 @@ section.contents section.main-content.container-fluid {
   margin-bottom: 2rem;
 }
 
-section.contents section.main-content.container-fluid div.section-title {
+section.contents section.section-1.main-content.container-fluid div.section-title {
   background-color: #e0e0e0;
   display: flex;
   flex-direction: column;
@@ -371,16 +378,16 @@ section.contents section.main-content.container-fluid div.section-title {
   width: 100%;
 }
 
-section.contents section.main-content.container-fluid div.section-title h3.h3 {
+section.contents section.section-1.main-content.container-fluid div.section-title h3.h3 {
   font-size: 2.6rem;
   text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
-section.contents section.main-content.container-fluid div.section-title h4.text-muted.lead {
+section.contents section.section-1.main-content.container-fluid div.section-title h4.text-muted.lead {
   font-size: 85%;
 }
 
-section.contents section.main-content.container-fluid div.card {
+section.contents section.section-1.main-content.container-fluid div.card {
   width: 100%;
   height: 50vh;
   margin: 0 1rem;
@@ -391,18 +398,18 @@ section.contents section.main-content.container-fluid div.card {
   border: none;
 }
 
-section.contents section.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag {
+section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag {
   display: flex;
   width: 100%;
   height: 100%;
   margin: 0;
 }
 
-section.contents section.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer {
+section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer {
   width: 100%;
 }
 
-section.contents section.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage {
+section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage {
   width: 90%;
   height: 100%;
   display: flex;
@@ -410,7 +417,7 @@ section.contents section.main-content.container-fluid div.card div.img-gallery.o
   justify-content: center;
 }
 
-section.contents section.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item {
+section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item {
   transform: scale(0.8);
   box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.7);
   transition: all 0.3s ease-in;
@@ -419,12 +426,12 @@ section.contents section.main-content.container-fluid div.card div.img-gallery.o
   height: 70%;
 }
 
-section.contents section.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item img.image-slide {
+section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item img.image-slide {
   width: 100%;
   height: 100%;
 }
 
-section.contents section.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.center {
+section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.center {
   transform: scale(1);
   box-shadow: 0px 9px 32px 9px rgba(0, 0, 0, 0.15);
   margin-top: 0;
@@ -432,12 +439,12 @@ section.contents section.main-content.container-fluid div.card div.img-gallery.o
   height: 80%;
 }
 
-section.contents section.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.center img.image-slide {
+section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.center img.image-slide {
   width: 100%;
   height: 100%;
 }
 
-section.contents section.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-dots {
+section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-dots {
   width: 100%;
   height: 25%;
   text-align: center;
@@ -448,7 +455,7 @@ section.contents section.main-content.container-fluid div.card div.img-gallery.o
   bottom: -1rem;
 }
 
-section.contents section.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-dots button.owl-dot {
+section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-dots button.owl-dot {
   background: #e7d9eb;
   width: 35px;
   height: 8px;
@@ -458,11 +465,11 @@ section.contents section.main-content.container-fluid div.card div.img-gallery.o
   outline: none;
 }
 
-section.contents section.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-dots button.owl-dot:hover {
+section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-dots button.owl-dot:hover {
   background: #ff8800;
 }
 
-section.contents section.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-dots button.owl-dot.active {
+section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-dots button.owl-dot.active {
   box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.07);
   background: #ff8800;
 }
@@ -520,6 +527,245 @@ section.contents section.section-3 div.counters div.milestone_col div.milestone 
   line-height: 0.75;
 }
 
+section.contents section.section-4 {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #faf6fb;
+}
+
+section.contents section.section-4 div.cards-gallery {
+  width: 100%;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer {
+  width: 100%;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage {
+  width: 100% !important;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item.active,
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item {
+  width: 100% !important;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item.active div.card-deck,
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item div.card-deck {
+  width: 100%;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item.active div.card-deck div.card.card-course,
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item div.card-deck div.card.card-course {
+  width: 90%;
+  min-height: 100%;
+  margin: 1rem;
+  border: 1px solid rgba(44, 43, 49, 0.4);
+  display: flex;
+  flex-direction: column;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item.active div.card-deck div.card.card-course:hover > div.card-body,
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item div.card-deck div.card.card-course:hover > div.card-body {
+  background-color: #e0e0e0;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item.active div.card-deck div.card.card-course:hover > div.card-body > h5.card-title,
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item div.card-deck div.card.card-course:hover > div.card-body > h5.card-title {
+  color: #ffae00;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item.active div.card-deck div.card.card-course:hover > img.card-img-top.image-card-slider,
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item div.card-deck div.card.card-course:hover > img.card-img-top.image-card-slider {
+  transform: scale(1);
+  transition: all .3s linear;
+  opacity: 1;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item.active div.card-deck div.card.card-course img.card-img-top.image-card-slider,
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item div.card-deck div.card.card-course img.card-img-top.image-card-slider {
+  width: 100%;
+  height: 300px;
+  opacity: .8;
+  transform: scale(0.9);
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item.active div.card-deck div.card.card-course div.card-body,
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item div.card-deck div.card.card-course div.card-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item.active div.card-deck div.card.card-course div.card-body h5.card-title,
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item div.card-deck div.card.card-course div.card-body h5.card-title {
+  width: 100%;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item.active div.card-deck div.card.card-course div.card-body div.buttons-card,
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item div.card-deck div.card.card-course div.card-body div.buttons-card {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item.active div.card-deck div.card.card-course div.card-body div.buttons-card button.btn,
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item div.card-deck div.card.card-course div.card-body div.buttons-card button.btn {
+  width: 45%;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item.active div.card-deck div.card.card-course div.card-body div.buttons-card button.btn.register,
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item div.card-deck div.card.card-course div.card-body div.buttons-card button.btn.register {
+  border: 1px solid #ffae00;
+  color: #ffae00;
+  margin-left: 1rem;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item.active div.card-deck div.card.card-course div.card-body div.buttons-card button.btn.register:hover, section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item.active div.card-deck div.card.card-course div.card-body div.buttons-card button.btn.register:focus,
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item div.card-deck div.card.card-course div.card-body div.buttons-card button.btn.register:hover,
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item div.card-deck div.card.card-course div.card-body div.buttons-card button.btn.register:focus {
+  color: white;
+  background-color: #ffae00;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item.active div.card-deck div.card.card-course div.card-body div.buttons-card button.btn.register:focus,
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item div.card-deck div.card.card-course div.card-body div.buttons-card button.btn.register:focus {
+  box-shadow: 0px 0px 6px 4px rgba(255, 136, 0, 0.5);
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item.active div.card-deck div.card.card-course div.card-body div.teacher svg,
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item div.card-deck div.card.card-course div.card-body div.teacher svg {
+  fill: black;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item.active div.card-deck div.card.card-course div.card-body div.teacher span.teacher-name,
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item div.card-deck div.card.card-course div.card-body div.teacher span.teacher-name {
+  font-size: 95%;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item.active div.card-deck div.card.card-course div.card-body div.price,
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item div.card-deck div.card.card-course div.card-body div.price {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item.active div.card-deck div.card.card-course div.card-body div.price del.price-original,
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item div.card-deck div.card.card-course div.card-body div.price del.price-original {
+  font-size: 80%;
+  width: max-content;
+  color: #918ea0;
+  border-left: 1px solid #918ea0;
+  margin-left: .5rem;
+  padding-left: .5rem;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item.active div.card-deck div.card.card-course div.card-body div.price span.price-sale,
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item div.card-deck div.card.card-course div.card-body div.price span.price-sale {
+  margin-right: .5rem;
+  font-size: 90%;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item.active div.card-deck div.card.card-course div.card-body div.date,
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item div.card-deck div.card.card-course div.card-body div.date {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item.active div.card-deck div.card.card-course div.card-body div.date span.date-text,
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item div.card-deck div.card.card-course div.card-body div.date span.date-text {
+  font-size: 90%;
+  font-weight: bold;
+  color: #918ea0;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item.active div.card-deck div.card.card-course div.card-body div.date i,
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item div.card-deck div.card.card-course div.card-body div.date i {
+  margin-left: .4rem;
+  font-size: 24px;
+  color: #918ea0;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item.active div.card-deck div.card.card-course div.card-body div.time,
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item div.card-deck div.card.card-course div.card-body div.time {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item.active div.card-deck div.card.card-course div.card-body div.time i,
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item div.card-deck div.card.card-course div.card-body div.time i {
+  margin-left: .4rem;
+  font-size: 20px;
+  color: #918ea0;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item.active div.card-deck div.card.card-course div.card-body div.time span.time-text,
+section.contents section.section-4 div.cards-gallery div.owl-stage-outer div.owl-stage div.owl-item div.card-deck div.card.card-course div.card-body div.time span.time-text {
+  font-size: 90%;
+  font-weight: bold;
+  color: #918ea0;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-nav button.owl-prev {
+  color: #2c2b31;
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  border: none;
+  border-color: transparent;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-nav button.owl-prev:focus, section.contents section.section-4 div.cards-gallery div.owl-nav button.owl-prev:active {
+  border: none;
+  outline: none;
+  border-color: transparent !important;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-nav button.owl-prev i.fa.fa-angle-left {
+  font-size: 36px;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-nav button.owl-next {
+  color: #2c2b31;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  border: none;
+  border-color: transparent;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-nav button.owl-next:focus, section.contents section.section-4 div.cards-gallery div.owl-nav button.owl-next:active {
+  border: none;
+  outline: none;
+  border-color: transparent !important;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-nav button.owl-next i.fa.fa-angle-right {
+  font-size: 36px;
+}
+
+section.contents section.section-4 div.cards-gallery div.owl-nav button.owl-next.disabled,
+section.contents section.section-4 div.cards-gallery div.owl-nav button.owl-prev.disabled {
+  opacity: .4;
+}
+
 footer.footer {
   width: 100%;
   height: 50%;
@@ -556,7 +802,7 @@ footer.footer div.row div.footer-columns div.footer-links {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 footer.footer div.row div.footer-columns div.footer-links div.footer-title {
@@ -572,11 +818,38 @@ footer.footer div.row div.footer-columns div.footer-links div.footer-title {
 
 footer.footer div.row div.footer-columns div.footer-links span.description {
   text-align: justify;
-  text-justify: inter-ideograph;
   width: 100%;
   font-size: 80%;
   line-height: 1.8rem;
   color: rgba(108, 106, 116, 0.9);
+}
+
+footer.footer div.row div.footer-columns div.footer-links div.social-medias {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer.footer div.row div.footer-columns div.footer-links div.social-medias a.social-media {
+  text-decoration: none;
+  color: #ff6600;
+  display: flex;
+  width: 10%;
+  height: max-content;
+}
+
+footer.footer div.row div.footer-columns div.footer-links div.social-medias a.social-media:hover {
+  color: rgba(108, 106, 116, 0.9);
+}
+
+footer.footer div.row div.footer-columns div.footer-links div.social-medias a.social-media:focus {
+  outline: none;
+}
+
+footer.footer div.row div.footer-columns div.footer-links div.social-medias a.social-media i.social-media-icon {
+  font-size: 18px;
 }
 
 footer.footer div.row div.footer-columns a.footer-link {
@@ -597,18 +870,41 @@ footer.footer div.row div.footer-columns a.footer-link:hover {
   color: #ff6600;
 }
 
-footer.footer div.row div.footer-columns a.footer-link i {
+footer.footer div.row div.footer-columns div.footer-link {
+  display: flex;
+  font-size: 80%;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(108, 106, 116, 0.9);
+  text-decoration: none;
+  line-height: 1.8rem;
+}
+
+footer.footer div.row div.footer-columns div.footer-link i {
   color: #ff6600;
   font-size: 1rem;
   margin-left: .5rem;
 }
 
-footer.footer div.row div.footer-columns a.footer-link i.fa-home {
+footer.footer div.row div.footer-columns div.footer-link i:hover {
+  color: rgba(108, 106, 116, 0.9);
+}
+
+footer.footer div.row div.footer-columns div.footer-link svg {
+  fill: #ff6600;
+  margin-left: .5rem;
+}
+
+footer.footer div.row div.footer-columns div.footer-link svg:hover {
+  fill: rgba(108, 106, 116, 0.9);
+}
+
+footer.footer div.row div.footer-columns div.footer-link i.fa-home {
   font-size: 1.3rem;
   margin-bottom: 1rem;
 }
 
-footer.footer div.row div.footer-columns a.footer-link span {
+footer.footer div.row div.footer-columns div.footer-link span {
   color: rgba(108, 106, 116, 0.9);
   text-align: justify;
 }

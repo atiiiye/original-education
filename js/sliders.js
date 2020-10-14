@@ -31,4 +31,28 @@ $(document).ready(function () {
       '<i class="fa fa-angle-right"></i>',
     ],
   });
+ 
+  $("#cards-gallery").owlCarousel({
+    rtl: true,
+    nav: true,
+    items: 4,
+    dots: false,
+    center: false,
+    // autoplay: true,
+    // autoplayTimeout: 5000,
+    // loop: true,
+    navText: [
+      '<i class="fas fa-arrow-left"></i>',
+      '<i class="fas fa-arrow-right"></i>',
+    ],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 2,
+      },
+    },
+  });
 });
+

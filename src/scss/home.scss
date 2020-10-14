@@ -81,7 +81,8 @@ header.header {
         padding: 0 1rem;
         background-color: $color-light;
         height: 50px;
-        margin-bottom: 1rem;
+        margin-bottom: .8rem;
+        margin-top: .8rem;
 
         div.navbar-right {
             display: flex;
@@ -342,6 +343,10 @@ header.header {
         }
 
         div.navbar-left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
             img.logo {
                 width: 65px;
                 height: 100%;
@@ -356,7 +361,7 @@ section.contents {
     margin-bottom: 1rem;
     font-family: "IRANSans";
 
-    section.main-content.container-fluid {
+    section.section-1.main-content.container-fluid {
         width: 100%;
         padding: 1rem;
         display: flex;
@@ -535,6 +540,232 @@ section.contents {
         }
     }
 
+    section.section-4 {
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba($color:$color-light-2, $alpha: 1.0);
+
+        div.cards-gallery {
+            width: 100%;
+
+            div.owl-stage-outer {
+                width: 100%;
+
+                div.owl-stage {
+                    width: 100% !important;
+
+                    div.owl-item.active,
+                    div.owl-item {
+                        width: 100% !important;
+
+                        div.card-deck {
+                            width: 100%;
+
+                            div.card.card-course {
+                                width: 90%;
+                                min-height: 100%;
+                                margin: 1rem;
+                                border: 1px solid rgba($color: $color-header, $alpha: .4);
+                                display: flex;
+                                flex-direction: column;
+                                // justify-content: space-between;
+                                // background-color: rgba($color:$color-navbar, $alpha: 1.0);
+
+                                &:hover>div.card-body {
+                                    background-color: rgba($color:$color-navbar, $alpha: 1.0);
+                                }
+
+                                &:hover>div.card-body>h5.card-title {
+                                    color: rgba($color:$color-orange-light, $alpha: 1.0);
+                                }
+
+                                &:hover>img.card-img-top.image-card-slider {
+                                    transform: scale(1);
+                                    transition: all .3s linear;
+                                    opacity: 1;
+                                }
+
+                                img.card-img-top.image-card-slider {
+                                    width: 100%;
+                                    height: 300px;
+                                    opacity: .8;
+                                    transform: scale(.9);
+                                }
+
+                                div.card-body {
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: flex-start;
+                                    align-items: center;
+
+                                    h5.card-title {
+                                        width: 100%;
+                                        font-weight: bold;
+                                        display: flex;
+                                        justify-content: center;
+                                    }
+
+                                    div.buttons-card {
+                                        width: 85%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+
+                                        button.btn {
+                                            width: 45%;
+                                        }
+
+                                        button.btn.register {
+                                            border: 1px solid rgba($color: $color-orange-light, $alpha: 1.0);
+                                            color: rgba($color: $color-orange-light, $alpha: 1.0);
+                                            margin-left: 1rem;
+
+                                            &:hover,
+                                            &:focus {
+                                                color: rgba($color: $color-light, $alpha: 1.0);
+                                                background-color: rgba($color: $color-orange-light, $alpha: 1.0);
+                                            }
+
+                                            &:focus {
+                                                box-shadow: 0px 0px 6px 4px rgba($color: $color-orange-medium, $alpha: .5);
+                                            }
+                                        }
+                                    }
+
+                                    div.teacher {
+                                        svg {
+                                            fill: rgba($color: $color-dark, $alpha: 1.0);
+                                        }
+
+                                        span.teacher-name {
+                                            font-size: 95%;
+
+                                        }
+                                    }
+
+                                    div.price {
+                                        width: 50%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        height: 40px;
+
+                                        del.price-original {
+                                            font-size: 80%;
+                                            width: max-content;
+                                            color: rgba($color: $color-header-text, $alpha: 1.0);
+                                            border-left: 1px solid rgba($color: $color-header-text, $alpha: 1.0);
+                                            margin-left: .5rem;
+                                            padding-left: .5rem;
+                                        }
+
+                                        span.price-sale {
+                                            margin-right: .5rem;
+                                            font-size: 90%;
+                                        }
+                                    }
+
+                                    div.date {
+                                        width: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        height: 40px;
+
+                                        span.date-text {
+                                            font-size: 90%;
+                                            font-weight: bold;
+                                            color: rgba($color: $color-header-text, $alpha: 1.0);
+                                        }
+
+                                        i {
+                                            margin-left: .4rem;
+                                            font-size: 24px;
+                                            color: rgba($color: $color-header-text, $alpha: 1.0);
+                                        }
+                                    }
+
+                                    div.time {
+                                        width: 100%;
+                                        height: 40px;
+                                        display: flex;
+                                        justify-content: center;
+
+                                        align-items: center;
+
+                                        i {
+                                            margin-left: .4rem;
+                                            font-size: 20px;
+                                            color: rgba($color: $color-header-text, $alpha: 1.0);
+                                        }
+
+                                        span.time-text {
+                                            font-size: 90%;
+                                            font-weight: bold;
+                                            color: rgba($color: $color-header-text, $alpha: 1.0);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+            }
+
+            div.owl-nav {
+                button.owl-prev {
+                    color: $color-header;
+                    position: absolute;
+                    top: 50%;
+                    left: 2%;
+                    border: none;
+                    border-color: transparent;
+
+                    &:focus,
+                    &:active {
+                        border: none;
+                        outline: none;
+                        border-color: transparent !important;
+                    }
+
+                    i.fa.fa-angle-left {
+                        font-size: 36px;
+                    }
+                }
+
+                button.owl-next {
+                    color: $color-header;
+                    position: absolute;
+                    top: 50%;
+                    right: 2%;
+                    border: none;
+                    border-color: transparent;
+
+                    &:focus,
+                    &:active {
+                        border: none;
+                        outline: none;
+                        border-color: transparent !important;
+                    }
+
+                    i.fa.fa-angle-right {
+                        font-size: 36px;
+                    }
+                }
+
+                button.owl-next.disabled,
+                button.owl-prev.disabled {
+                    opacity: .4;
+                }
+            }
+        }
+    }
 }
 
 footer.footer {
@@ -573,7 +804,7 @@ footer.footer {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: center;
+                justify-content: flex-start;
 
 
                 div.footer-title {
@@ -588,20 +819,43 @@ footer.footer {
 
                 }
 
-                // div.footer-title.footer-title-text {
-                //     position: relative;
-                //     top: 1rem;
-                // }
-
                 span.description {
                     text-align: justify;
-                    text-justify: inter-ideograph;
                     width: 100%;
                     font-size: 80%;
                     line-height: 1.8rem;
                     color: rgba($color: $color-text, $alpha: .9);
                 }
 
+                div.social-medias {
+                    width: 100%;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    a.social-media {
+                        text-decoration: none;
+                        color: rgba($color: $color-orange-dark, $alpha: 1.0);
+                        display: flex;
+                        width: 10%;
+                        height: max-content;
+
+                        &:hover {
+                            color: rgba($color: $color-text, $alpha: .9);
+                        }
+
+                        &:focus {
+                            outline: none;
+                        }
+
+
+                        i.social-media-icon {
+                            font-size: 18px;
+                        }
+
+                    }
+                }
             }
 
             a.footer-link {
@@ -620,11 +874,34 @@ footer.footer {
                 &:hover {
                     color: rgba($color: $color-orange-dark, $alpha: 1.0);
                 }
+            }
+
+            div.footer-link {
+                display: flex;
+                font-size: 80%;
+                justify-content: space-between;
+                align-items: center;
+                color: rgba($color: $color-text, $alpha: .9);
+                text-decoration: none;
+                line-height: 1.8rem;
 
                 i {
                     color: rgba($color: $color-orange-dark, $alpha: 1.0);
                     font-size: 1rem;
                     margin-left: .5rem;
+
+                    &:hover {
+                        color: rgba($color: $color-text, $alpha: .9);
+                    }
+                }
+
+                svg {
+                    fill: rgba($color: $color-orange-dark, $alpha: 1.0);
+                    margin-left: .5rem;
+
+                    &:hover {
+                        fill: rgba($color: $color-text, $alpha: .9);
+                    }
                 }
 
                 i.fa-home {

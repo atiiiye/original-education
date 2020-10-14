@@ -1,375 +1,659 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Origonal Education</title>
+    <link rel="icon" href="./img/icons-learning.png" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/home.css" />
+    <link rel="stylesheet" href="./src/css/mediaHome.css" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./src/css/themify-icons.css" />
+    <link rel="stylesheet" href="./src/css/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Origonal Education</title>
-  <link rel="icon" href="./img/icons-learning.png" />
-  <link rel="stylesheet" href="./src/css/reset.css" />
-  <link rel="stylesheet" href="./src/css/home.css" />
-  <link rel="stylesheet" href="./src/css/mediaHome.css" />
-  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="./src/css/themify-icons.css" />
-  <link rel="stylesheet" href="./src/css/owl.carousel.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-</head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-  <!--start header-->
-  <header class="header">
-    <div class="top-header">
-      <div class="top-header-right">
-        <div class="top-header-right-links">
-          <a class="top-header-right-link" href="#">درباره ما</a>
-          <a class="top-header-right-link" href="#">تماس باما</a>
-          <a class="top-header-right-link" href="#">مقالات</a>
+  <body>
+    <!--start header-->
+    <header class="header">
+      <div class="top-header">
+        <div class="top-header-right">
+          <div class="top-header-right-links">
+            <a class="top-header-right-link" href="#">درباره ما</a>
+            <a class="top-header-right-link" href="#">تماس باما</a>
+            <a class="top-header-right-link" href="#">مقالات</a>
+          </div>
+        </div>
+        <div class="top-header-left">
+          <div class="top-header-left-btn">
+            <a class="top-header-left-link" href="#">ورود</a>
+            <span>/</span>
+            <a class="top-header-left-link" href="#">ثبت نام</a>
+          </div>
         </div>
       </div>
-      <div class="top-header-left">
-        <div class="top-header-left-btn">
-          <a class="top-header-left-link" href="#">ورود</a>
-          <span>/</span>
-          <a class="top-header-left-link" href="#">ثبت نام</a>
+
+      <div class="navbar navbar-expand-lg mainmenu">
+        <div class="navbar-right">
+          <div
+            class="hamburger-menu navbar-toggler"
+            type="button"
+            data-target="#coll-navbar"
+            data-toggle="collapse"
+          >
+            <span class="menu navbar-toggler-icon">
+              <div class="menu-line menu-line-1"></div>
+              <div class="menu-line menu-line-2"></div>
+              <div class="menu-line menu-line-3"></div>
+            </span>
+          </div>
+
+          <div class="collapse navbar-collapse" id="coll-navbar">
+            <ul class="navbar-nav">
+              <div class="justify-section">
+                <li class="nav-item">
+                  <a class="nav-link">
+                    <i class="fas fa-home"></i>
+                    صفحه اصلی
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    data-toggle="dropdown"
+                    id="navbarDropdown"
+                  >
+                    زبان های خارجی
+                    <i class="jet-dropdown-arrow fa fa-angle-down"></i>
+                  </a>
+                  <ul class="dropdown-menu" id="sub-menu-0">
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">آموزش زبان انگلیسی</a>
+                    </li>
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">آموزش زبان آلمانی</a>
+                    </li>
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">آموزش زبان فرانسوی</a>
+                    </li>
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">آموزش زبان ترکی</a>
+                    </li>
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">آموزش زبان اسپانیایی</a>
+                    </li>
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">آموزش زبان فارسی</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" data-toggle="dropdown">
+                    آموزش طراحی
+                    <i class="jet-dropdown-arrow fa fa-angle-down"></i>
+                  </a>
+                  <ul class="dropdown-menu" id="sub-menu-0">
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">آموزش طراحی سایت</a>
+                    </li>
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">آموزش فوتوشاپ</a>
+                    </li>
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">آموزش طراحی گرافیک</a>
+                    </li>
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">آموزش موشن گرافیک</a>
+                    </li>
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">آموزش طراحی سه بعدی</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" data-toggle="dropdown">
+                    آموزش کسب و کار
+                    <i class="jet-dropdown-arrow fa fa-angle-down"></i>
+                  </a>
+                  <ul class="dropdown-menu" id="sub-menu-0">
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item"
+                        >آموزش زبان برنامه نویسی</a
+                      >
+                    </li>
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">آموزش ساخت اپلیکیشن</a>
+                    </li>
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">آموزش سئوی سایت</a>
+                    </li>
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">آموزش شبکه</a>
+                    </li>
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">آموزش امنیت شبکه</a>
+                    </li>
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">آموزش مدیریت پروژه</a>
+                    </li>
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">آموزش کامپیوتر</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown" id="nav-item">
+                  <a
+                    class="nav-link"
+                    data-toggle="dropdown"
+                    id="navbarDropdown"
+                  >
+                    سیستم تلفنی
+                    <i class="jet-dropdown-arrow fa fa-angle-down"></i>
+                  </a>
+                  <ul class="dropdown-menu" id="sub-menu-0">
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">گزارش وضعیت</a>
+                    </li>
+
+                    <li class="list-item dropdown" id="sub2-1">
+                      <a
+                        href="#"
+                        class="dropdown-item"
+                        id="navbarDropdown"
+                        data-toggle="dropdown"
+                      >
+                        شماره های داخلی
+                        <i class="jet-dropdown-arrow fa fa-angle-down"></i>
+                      </a>
+                      <ul class="dropdown-menu navbar-nav" id="sub-menu-1">
+                        <li class="dropdown-item">
+                          <a href="#" class="dropdown-item">SIP</a>
+                        </li>
+                        <li class="dropdown-item">
+                          <a href="#" class="dropdown-item">IAX</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">تماس های ورودی</a>
+                    </li>
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">تماس های خروجی</a>
+                    </li>
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">IVR</a>
+                    </li>
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">Trunk</a>
+                    </li>
+                    <li class="list-item dropdown" id="sub2-2">
+                      <a
+                        href="#"
+                        class="dropdown-item dropdown"
+                        data-toggle="dropdown"
+                      >
+                        گروه بندی
+                        <i class="jet-dropdown-arrow fa fa-angle-down"></i>
+                      </a>
+                      <ul class="dropdown-menu" id="sub-menu-1">
+                        <li class="dropdown-item">
+                          <a href="#" class="dropdown-item">گروه داخلی</a>
+                        </li>
+                        <li class="dropdown-item">
+                          <a href="#" class="dropdown-item"
+                            >گروه کارت های شهری</a
+                          >
+                        </li>
+                        <li class="dropdown-item">
+                          <a href="#" class="dropdown-item">گروه زنگ</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">فایل صوتی</a>
+                    </li>
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">آهنگ انتظار</a>
+                    </li>
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">صف انتظار</a>
+                    </li>
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">کد ساز</a>
+                    </li>
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">کدهای غیرمجاز</a>
+                    </li>
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">ساعت های کاری</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" data-toggle="dropdown">
+                    آموزش های ویژه
+                    <i class="jet-dropdown-arrow fa fa-angle-down"></i>
+                  </a>
+                  <ul class="dropdown-menu" id="sub-menu-0">
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">آموزش آهنگسازی</a>
+                    </li>
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item"
+                        >آموزش نرم افزار بلندر</a
+                      >
+                    </li>
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">آموزش الکترونیک</a>
+                    </li>
+                    <li class="list-item" id="list-item">
+                      <a href="#" class="dropdown-item">آموزش میکس فیلم</a>
+                    </li>
+                  </ul>
+                </li>
+              </div>
+            </ul>
+            <img class="logo d-flex d-lg-none" src="./img/home_logo.png" />
+          </div>
+        </div>
+        <div class="navbar-left d-none d-lg-flex">
+          <img class="logo" src="./img/home_logo.png" />
         </div>
       </div>
-    </div>
+    </header>
+    <!--end header-->
 
-    <div class="navbar navbar-expand-lg mainmenu">
-      <div class="navbar-right">
-        <div class="hamburger-menu navbar-toggler" type="button" data-target="#coll-navbar" data-toggle="collapse">
-          <span class="menu navbar-toggler-icon">
-            <div class="menu-line menu-line-1"></div>
-            <div class="menu-line menu-line-2"></div>
-            <div class="menu-line menu-line-3"></div>
-          </span>
+    <!--start content-->
+    <section class="contents">
+      <section class="section-1 main-content container-fluid p-0">
+        <div class="section-title">
+          <h3 class="h3">آنلاین آموز</h3>
+          <h4 class="text-muted lead">Online Education</h4>
         </div>
 
-        <div class="collapse navbar-collapse" id="coll-navbar">
-          <ul class="navbar-nav">
-            <div class="justify-section">
+        <div class="card">
+          <div class="img-gallery owl-carousel owl-theme" id="img-gallery">
+            <img src="img/slide-2.png" alt="screen2" class="image-slide" />
+            <img src="img/slide-4.png" alt="screen4" class="image-slide" />
+            <img src="img/slide-3.png" alt="screen3" class="image-slide" />
+            <img src="img/slide-2.png" alt="screen2" class="image-slide" />
+            <img src="img/slide-4.png" alt="screen4" class="image-slide" />
+          </div>
+        </div>
+      </section>
 
-              <li class="nav-item">
-                <a class="nav-link">
-                  <i class="fas fa-home"></i>
-                  صفحه اصلی
-                </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" data-toggle="dropdown" id="navbarDropdown">
-                  زبان های خارجی
-                  <i class="jet-dropdown-arrow fa fa-angle-down"></i>
-                </a>
-                <ul class="dropdown-menu" id="sub-menu-0">
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">آموزش زبان انگلیسی</a>
-                  </li>
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">آموزش زبان آلمانی</a>
-                  </li>
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">آموزش زبان فرانسوی</a>
-                  </li>
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">آموزش زبان ترکی</a>
-                  </li>
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">آموزش زبان اسپانیایی</a>
-                  </li>
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">آموزش زبان فارسی</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" data-toggle="dropdown">
-                  آموزش طراحی
-                  <i class="jet-dropdown-arrow fa fa-angle-down"></i>
-                </a>
-                <ul class="dropdown-menu" id="sub-menu-0">
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">آموزش طراحی سایت</a>
-                  </li>
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">آموزش فوتوشاپ</a>
-                  </li>
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">آموزش طراحی گرافیک</a>
-                  </li>
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">آموزش موشن گرافیک</a>
-                  </li>
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">آموزش طراحی سه بعدی</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" data-toggle="dropdown">
-                  آموزش کسب و کار
-                  <i class="jet-dropdown-arrow fa fa-angle-down"></i>
-                </a>
-                <ul class="dropdown-menu" id="sub-menu-0">
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">آموزش زبان برنامه نویسی</a>
-                  </li>
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">آموزش ساخت اپلیکیشن</a>
-                  </li>
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">آموزش سئوی سایت</a>
-                  </li>
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">آموزش شبکه</a>
-                  </li>
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">آموزش امنیت شبکه</a>
-                  </li>
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">آموزش مدیریت پروژه</a>
-                  </li>
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">آموزش کامپیوتر</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown" id="nav-item">
-                <a class="nav-link" data-toggle="dropdown" id="navbarDropdown">
-                  سیستم تلفنی
-                  <i class="jet-dropdown-arrow fa fa-angle-down"></i>
-                </a>
-                <ul class="dropdown-menu" id="sub-menu-0">
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">گزارش وضعیت</a>
-                  </li>
-
-                  <li class="list-item dropdown" id="sub2-1">
-                    <a href="#" class="dropdown-item" id="navbarDropdown" data-toggle="dropdown">
-                      شماره های داخلی
-                      <i class="jet-dropdown-arrow fa fa-angle-down"></i>
-                    </a>
-                    <ul class="dropdown-menu navbar-nav" id="sub-menu-1">
-                      <li class="dropdown-item">
-                        <a href="#" class="dropdown-item">SIP</a>
-                      </li>
-                      <li class="dropdown-item">
-                        <a href="#" class="dropdown-item">IAX</a>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">تماس های ورودی</a>
-                  </li>
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">تماس های خروجی</a>
-                  </li>
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">IVR</a>
-                  </li>
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">Trunk</a>
-                  </li>
-                  <li class="list-item dropdown" id="sub2-2">
-                    <a href="#" class="dropdown-item dropdown" data-toggle="dropdown">
-                      گروه بندی
-                      <i class="jet-dropdown-arrow fa fa-angle-down"></i>
-                    </a>
-                    <ul class="dropdown-menu" id="sub-menu-1">
-                      <li class="dropdown-item">
-                        <a href="#" class="dropdown-item">گروه داخلی</a>
-                      </li>
-                      <li class="dropdown-item">
-                        <a href="#" class="dropdown-item">گروه کارت های شهری</a>
-                      </li>
-                      <li class="dropdown-item">
-                        <a href="#" class="dropdown-item">گروه زنگ</a>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">فایل صوتی</a>
-                  </li>
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">آهنگ انتظار</a>
-                  </li>
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">صف انتظار</a>
-                  </li>
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">کد ساز</a>
-                  </li>
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">کدهای غیرمجاز</a>
-                  </li>
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">ساعت های کاری</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" data-toggle="dropdown">
-                  آموزش های ویژه
-                  <i class="jet-dropdown-arrow fa fa-angle-down"></i>
-                </a>
-                <ul class="dropdown-menu" id="sub-menu-0">
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">آموزش آهنگسازی</a>
-                  </li>
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">آموزش نرم افزار بلندر</a>
-                  </li>
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">آموزش الکترونیک</a>
-                  </li>
-                  <li class="list-item" id="list-item">
-                    <a href="#" class="dropdown-item">آموزش میکس فیلم</a>
-                  </li>
-                </ul>
-              </li>
+      <section class="section-3 container-fluid p-0">
+        <div class="counters" id="counters">
+          <div class="col-lg-3 milestone_col">
+            <div class="milestone text-center">
+              <div class="milestone_icon">
+                <img src="./img/milestone_1.svg" alt="" />
+              </div>
+              <div class="milestone_counter" data-count="1548">0</div>
+              <div class="milestone_text">دوره های آنلاین</div>
             </div>
-          </ul>
-          <img class="logo d-flex d-lg-none" src="./img/home_logo.png" />
-        </div>
-      </div>
-      <div class="navbar-left d-none d-lg-flex">
-        <img class="logo" src="./img/home_logo.png" />
-      </div>
-    </div>
-  </header>
-  <!--end header-->
+          </div>
 
-  <!--start content-->
-  <section class="contents">
-    <section class="main-content container-fluid p-0">
-      <div class="section-title">
-        <h3 class="h3">آنلاین آموز</h3>
-        <h4 class="text-muted lead">Online Education</h4>
-      </div>
+          <div class="col-lg-3 milestone_col">
+            <div class="milestone text-center">
+              <div class="milestone_icon">
+                <img src="./img/milestone_2.svg" alt="" />
+              </div>
+              <div class="milestone_counter" data-count="7286">0</div>
+              <div class="milestone_text">دانشجو ها</div>
+            </div>
+          </div>
 
-      <div class="card">
-        <div class="img-gallery owl-carousel owl-theme" id="img-gallery">
-          <img src="img/slide-1.png" alt="screen2" class="image-slide" />
-          <img src="img/slide-1.png" alt="screen2" class="image-slide" />
-          <img src="img/slide-1.png" alt="screen2" class="image-slide" />
-          <img src="img/slide-5.jpg" alt="screen3" class="image-slide" />
+          <div class="col-lg-3 milestone_col">
+            <div class="milestone text-center">
+              <div class="milestone_icon">
+                <img src="./img/milestone_3.svg" alt="" />
+              </div>
+              <div class="milestone_counter" data-count="257">0</div>
+              <div class="milestone_text">مدرس ها</div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 milestone_col">
+            <div class="milestone text-center">
+              <div class="milestone_icon">
+                <img src="./img/milestone_4.svg" alt="" />
+              </div>
+              <div class="milestone_counter" data-count="39">0</div>
+              <div class="milestone_text">کشورها</div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <section class="section-4 container-fluid p-0">
+        <div class="cards-gallery owl-carousel owl-theme" id="cards-gallery">
+          <div class="card-deck">
+            <div class="card card-course">
+              <img
+                src="./img/slide-4.png"
+                class="card-img-top image-card-slider"
+                alt="screen4"
+              />
+              <div class="card-body">
+                <h5 class="card-title">عنوان دوره 1</h5>
+                <div class="teacher">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 172 172"
+                  >
+                    <g
+                      fill-rule="nonzero"
+                      stroke="none"
+                      stroke-width="1"
+                      stroke-linecap="butt"
+                      stroke-linejoin="miter"
+                      stroke-miterlimit="10"
+                      stroke-dasharray=""
+                      stroke-dashoffset="0"
+                      font-family="none"
+                      font-weight="none"
+                      font-size="none"
+                      text-anchor="none"
+                      style="mix-blend-mode: normal"
+                    >
+                      <path d="M0,172v-172h172v172z" fill="none"></path>
+                      <g>
+                        <path
+                          d="M86,17.2c-19.00027,0 -34.4,15.39973 -34.4,34.4v5.73333c0,19.00027 15.39973,34.4 34.4,34.4c19.00027,0 34.4,-15.39973 34.4,-34.4v-5.73333c0,-19.00027 -15.39973,-34.4 -34.4,-34.4zM85.9888,108.93333c-22.96773,0 -52.43707,12.42324 -60.91667,23.44844c-5.24027,6.81693 -0.25182,16.68489 8.34245,16.68489h105.15964c8.59427,0 13.58271,-9.86796 8.34245,-16.68489c-8.4796,-11.01947 -37.96013,-23.44844 -60.92786,-23.44844z"
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                  <span class="teacher-name">مریم خانی</span>
+                </div>
+                <div class="price">
+                  <del class="price-original">2000000تومان</del>
+                  <span class="price-sale">150000تومان</span>
+                </div>
+                <div class="date">
+                  <i class="material-icons">&#xe916;</i>
+                  <span class="date-text">2 مهر 1397</span>
+                </div>
+                <div class="time">
+                  <i class="far fa-clock"></i>
+                  <span class="time-text">12:30 ساعت</span>
+                </div>
+                <div class="buttons-card">
+                  <button class="btn register" type="button">ثبت نام</button>
+                  <button class="btn btn-outline-secondary view" type="button">
+                    مشاهده
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card card-course">
+              <img
+                src="./img/slide-4.png"
+                class="card-img-top image-card-slider"
+                alt="screen4"
+              />
+              <div class="card-body">
+                <h5 class="card-title">عنوان دوره 2</h5>
+                <div class="teacher">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 172 172"
+                  >
+                    <g
+                      fill-rule="nonzero"
+                      stroke="none"
+                      stroke-width="1"
+                      stroke-linecap="butt"
+                      stroke-linejoin="miter"
+                      stroke-miterlimit="10"
+                      stroke-dasharray=""
+                      stroke-dashoffset="0"
+                      font-family="none"
+                      font-weight="none"
+                      font-size="none"
+                      text-anchor="none"
+                      style="mix-blend-mode: normal"
+                    >
+                      <path d="M0,172v-172h172v172z" fill="none"></path>
+                      <g>
+                        <path
+                          d="M86,17.2c-19.00027,0 -34.4,15.39973 -34.4,34.4v5.73333c0,19.00027 15.39973,34.4 34.4,34.4c19.00027,0 34.4,-15.39973 34.4,-34.4v-5.73333c0,-19.00027 -15.39973,-34.4 -34.4,-34.4zM85.9888,108.93333c-22.96773,0 -52.43707,12.42324 -60.91667,23.44844c-5.24027,6.81693 -0.25182,16.68489 8.34245,16.68489h105.15964c8.59427,0 13.58271,-9.86796 8.34245,-16.68489c-8.4796,-11.01947 -37.96013,-23.44844 -60.92786,-23.44844z"
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                  <span class="teacher-name">مریم خانی</span>
+                </div>
+                <div class="price">
+                  <del class="price-original">2000000تومان</del>
+                  <span class="price-sale">150000تومان</span>
+                </div>
+                <div class="date">
+                  <i class="material-icons">&#xe916;</i>
+                  <span class="date-text">2 مهر 1397</span>
+                </div>
+                <div class="time">
+                  <i class="far fa-clock"></i>
+                  <span class="time-text">12:30 ساعت</span>
+                </div>
+                <div class="buttons-card">
+                  <button class="btn btn-outline-secondary view" type="button">
+                    مشاهده
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card card-course">
+              <img
+                src="./img/logo33.png"
+                class="card-img-top image-card-slider"
+                alt="screen4"
+              />
+              <div class="card-body">
+                <h5 class="card-title">عنوان دوره 3</h5>
+                <div class="teacher">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 172 172"
+                  >
+                    <g
+                      fill-rule="nonzero"
+                      stroke="none"
+                      stroke-width="1"
+                      stroke-linecap="butt"
+                      stroke-linejoin="miter"
+                      stroke-miterlimit="10"
+                      stroke-dasharray=""
+                      stroke-dashoffset="0"
+                      font-family="none"
+                      font-weight="none"
+                      font-size="none"
+                      text-anchor="none"
+                      style="mix-blend-mode: normal"
+                    >
+                      <path d="M0,172v-172h172v172z" fill="none"></path>
+                      <g>
+                        <path
+                          d="M86,17.2c-19.00027,0 -34.4,15.39973 -34.4,34.4v5.73333c0,19.00027 15.39973,34.4 34.4,34.4c19.00027,0 34.4,-15.39973 34.4,-34.4v-5.73333c0,-19.00027 -15.39973,-34.4 -34.4,-34.4zM85.9888,108.93333c-22.96773,0 -52.43707,12.42324 -60.91667,23.44844c-5.24027,6.81693 -0.25182,16.68489 8.34245,16.68489h105.15964c8.59427,0 13.58271,-9.86796 8.34245,-16.68489c-8.4796,-11.01947 -37.96013,-23.44844 -60.92786,-23.44844z"
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                  <span class="teacher-name">مریم خانی</span>
+                </div>
+                <div class="date">
+                  <i class="material-icons">&#xe916;</i>
+                  <span class="date-text">2 مهر 1397</span>
+                </div>
+                <div class="time">
+                  <i class="far fa-clock"></i>
+                  <span class="time-text">12:30 ساعت</span>
+                </div>
+                <div class="buttons-card">
+                  <button class="btn register" type="button">ثبت نام</button>
+                  <button class="btn btn-outline-secondary view" type="button">
+                    مشاهده
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card card-course">
+              <img
+                src="./img/slide-3.png"
+                class="card-img-top image-card-slider"
+                alt="screen4"
+              />
+              <div class="card-body">
+                <h5 class="card-title">عنوان دوره 4</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
-    <section class="section-3 container-fluid p-0">
-      <div class="counters" id="counters">
-        <div class="col-lg-3 milestone_col">
-          <div class="milestone text-center">
-            <div class="milestone_icon"><img src="./img/milestone_1.svg" alt=""></div>
-            <div class="milestone_counter" data-count="1548">0</div>
-            <div class="milestone_text">دوره های آنلاین</div>
+
+    <!--end content-->
+
+    <!--start footer-->
+    <footer class="footer">
+      <div class="logo_frame row">
+        <img src="./img/home_logo.png" class="home_logo" />
+      </div>
+      <div class="row">
+        <div class="footer-columns col-4">
+          <div class="footer-title">Online Education</div>
+          <div class="footer-links">
+            <span class="description">
+              با فراگیر شدن رویدادهای آنلاین و در نظر گرفتن مزایای آن برای
+              هم‌میهنان، ما توانستیم بستری بومی را برای شما فراهم کنیم و در مسیر
+              رسیدن به دنیایی بهتر، گام برداریم.</span
+            >
+            <div class="social-medias">
+              <a class="social-media" href="#">
+                <i class="fab fa-instagram social-media-icon"></i>
+              </a>
+              <a class="social-media" href="#">
+                <i class="fab fa-facebook-square social-media-icon"></i>
+              </a>
+              <a class="social-media" href="#">
+                <i class="fab fa-telegram-plane social-media-icon"></i>
+              </a>
+              <a class="social-media" href="#">
+                <i class="fab fa-twitter social-media-icon"></i>
+              </a>
+            </div>
           </div>
         </div>
-
-        <div class="col-lg-3 milestone_col">
-          <div class="milestone text-center">
-            <div class="milestone_icon"><img src="./img/milestone_2.svg" alt=""></div>
-            <div class="milestone_counter" data-count="7286">0</div>
-            <div class="milestone_text">دانشجو ها</div>
+        <div class="footer-columns col-2">
+          <div class="footer-title footer-title-text">شرایط و قوانین</div>
+          <div class="footer-links">
+            <a class="footer-link" href="#">حریم خصوصی</a>
+            <a class="footer-link" href="#">قوانین و مقررات</a>
+            <a class="footer-link" href="#">راهنمای کلاس آنلاین</a>
           </div>
         </div>
-
-        <div class="col-lg-3 milestone_col">
-          <div class="milestone text-center">
-            <div class="milestone_icon"><img src="./img/milestone_3.svg" alt=""></div>
-            <div class="milestone_counter" data-count="257">0</div>
-            <div class="milestone_text">مدرس ها </div>
+        <div class="footer-columns col-2">
+          <div class="footer-title footer-title-text">درباره ما</div>
+          <div class="footer-links">
+            <a class="footer-link" href="#">وبلاگ</a>
+            <a class="footer-link" href="#">دعوت به همکاری</a>
+            <a class="footer-link" href="#">حساب کاربری</a>
+            <a class="footer-link" href="#">دوره ها</a>
           </div>
         </div>
-
-        <div class="col-lg-3 milestone_col">
-          <div class="milestone text-center">
-            <div class="milestone_icon"><img src="./img/milestone_4.svg" alt=""></div>
-            <div class="milestone_counter" data-count="39">0</div>
-            <div class="milestone_text">کشورها</div>
+        <div class="footer-columns col-3">
+          <div class="footer-title footer-title-text">ارتباط با ما</div>
+          <div class="footer-links">
+            <div class="footer-link">
+              <i class="fas fa-home"></i>
+              <span
+                >تهران - خیابان شهید قرنی - خیابان سمیه - تقاطع خیابان استاد
+                نجات الهی - پلاک ۲۴۵ - طبقه سوم - واحد 7</span
+              >
+            </div>
+            <div class="footer-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="20"
+                height="20"
+                viewBox="0 0 172 172"
+              >
+                <g
+                  fill-rule="nonzero"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-miterlimit="10"
+                  stroke-dasharray=""
+                  stroke-dashoffset="0"
+                  font-family="none"
+                  font-weight="none"
+                  font-size="none"
+                  text-anchor="none"
+                  style="mix-blend-mode: normal"
+                >
+                  <path d="M0,172v-172h172v172z" fill="none"></path>
+                  <g>
+                    <path
+                      d="M19.84615,26.46154c-10.95673,0 -19.84615,8.88942 -19.84615,19.84615v79.38462c0,10.95673 8.88942,19.84615 19.84615,19.84615h132.30769c10.95673,0 19.84615,-8.88942 19.84615,-19.84615v-79.38462c0,-10.95673 -8.88942,-19.84615 -19.84615,-19.84615zM5.16827,45.27404l80.83173,43.62019l80.83173,-43.62019l-51.26923,39.89904l42.37981,43.41346l-51.68269,-36.79808l-20.25962,13.02404l-20.25962,-13.02404l-51.68269,36.79808l42.37981,-43.41346z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+              <span>roshanconcert@gmail.com</span>
+            </div>
+            <div class="footer-link">
+              <i class="fa fa-phone"></i>
+              <span>09355164313</span>
+            </div>
+            <div class="footer-link">
+              <i class="fa">&#xf10b;</i>
+              <span>09125165911</span>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-  </section>
+    </footer>
+    <!--end footer-->
 
-
-  <!--end content-->
-
-  <!--start footer-->
-  <footer class="footer">
-    <div class="logo_frame row">
-      <img src="./img/home_logo.png" class="home_logo">
-    </div>
-    <div class="row">
-      <div class="footer-columns col-4">
-        <div class="footer-title">Online Education</div>
-        <div class="footer-links">
-          <span class="description"> با فراگیر شدن رویدادهای آنلاین و در نظر گرفتن مزایای آن برای هم‌میهنان، ما توانستیم
-            بستری بومی
-            را برای شما فراهم کنیم و در مسیر رسیدن به دنیایی بهتر، گام برداریم.</span>
-          <div class="social-medias">
-
-          </div>
-        </div>
-      </div>
-      <div class="footer-columns col-2">
-        <div class="footer-title footer-title-text">شرایط و قوانین</div>
-        <div class="footer-links">
-          <a class="footer-link" href="#">حریم خصوصی</a>
-          <a class="footer-link" href="#">قوانین و مقررات</a>
-          <a class="footer-link" href="#">راهنمای کلاس آنلاین</a>
-        </div>
-      </div>
-      <div class="footer-columns col-2">
-        <div class="footer-title footer-title-text">درباره ما</div>
-        <div class="footer-links">
-          <a class="footer-link" href="#">وبلاگ</a>
-          <a class="footer-link" href="#">دعوت به همکاری</a>
-          <a class="footer-link" href="#">حساب کاربری</a>
-          <a class="footer-link" href="#">دوره ها</a>
-        </div>
-      </div>
-      <div class="footer-columns col-3">
-        <div class="footer-title footer-title-text">ارتباط با ما</div>
-        <div class="footer-links">
-          <a class="footer-link" href="#">
-            <i class="fas fa-home"></i>
-            <span>تهران - خیابان شهید قرنی - خیابان سمیه - تقاطع خیابان استاد نجات الهی - پلاک ۲۴۵ - طبقه سوم - واحد
-              7</span>
-          </a>
-          <a class="footer-link" href="#">
-            <i class="material-icons">&#xe158;</i>
-            <span>roshanconcert@gmail.com</span>
-          </a>
-          <a class="footer-link" href="#">
-            <i class="fa fa-phone"></i>
-            <span>09355164313</span>
-          </a>
-          <a class="footer-link" href="#">
-            <i class="fa">&#xf10b;</i>
-            <span>09125165911</span>
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </footer>
-  <!--end footer-->
-
-  <!--start scripts source -->
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <script src="./js/jquery.min.js"></script>
-  <script src="./bootstrap/js/jquery.min.js"></script>
-  <script src="./bootstrap/js/popper.min.js"></script>
-  <script src="./bootstrap/js/bootstrap.min.js"></script>
-  <script src="./js/menu.js"></script>
-  <script src="./js/sliders.js"></script>
-  <script src="./js/home.js"></script>
-  <script src="./js/counters.js"></script>
-  <script src="./js/owl.carousel.min.js"></script>
-  <!--end scripts source -->
-</body>
-
+    <!--start scripts source -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./bootstrap/js/jquery.min.js"></script>
+    <script src="./bootstrap/js/popper.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/sliders.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/counters.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <!--end scripts source -->
+  </body>
 </html>
