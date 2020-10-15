@@ -1,5 +1,7 @@
 $(document).ready(function () {
-    $("#img-gallery").owlCarousel( {
+
+
+    $(".img-gallery").owlCarousel( {
 
         rtl: true,
         nav: false,
@@ -14,12 +16,10 @@ $(document).ready(function () {
           0: {
             items: 1,
           }
-
           ,
           768: {
             items: 3,
           }
-
           ,
         }
 
@@ -28,7 +28,7 @@ $(document).ready(function () {
 
     );
 
-    $("#video-gallery").owlCarousel( {
+    $(".video-gallery").owlCarousel( {
         rtl: true,
         nav: true,
         items: 1,
@@ -42,17 +42,14 @@ $(document).ready(function () {
 
     );
 
-    $("#cards-gallery").owlCarousel( {
+    $(".cards-gallery").owlCarousel( {
 
         rtl: true,
         nav: true,
-        items: 4,
-        autoplay: true,
-        dots: false,
-        center: false,
-        autoplay: true,
+        items: 1,
+        // margin:16,
+        // autoplay: true,
         autoplayTimeout: 5000,
-        lazyLoad: true,
         navText: [ '<i class="fas fa-arrow-left"></i>',
         '<i class="fas fa-arrow-right"></i>',
         ],
@@ -61,20 +58,24 @@ $(document).ready(function () {
             items: 1,
             nav: true
           }
-
           ,
-          768: {
+          576: {
             loop: true,
             items: 2,
             nav: true
           }
-
           ,
-          991: {
+          768: {
+            loop: true,
             items: 3,
             nav: true
           }
 
+          ,
+          1100: {
+            items: 4,
+            nav: true
+          }
           ,
         }
 

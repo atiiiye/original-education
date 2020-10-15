@@ -42,4 +42,164 @@ body {
   src: url(../fonts/Vazir/Vazir.eot);
   src: url(../fonts/Vazir/Vazir.eot) format("embedded-opentype"), url(../fonts/Vazir/Vazir.woff2) format("woff2"), url(../fonts/Vazir/Vazir.woff) format("woff");
 }
+
+@media (max-width: 991px) {
+  section.contents section.section-3 {
+    width: 100%;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  section.contents section.section-3 div.counters {
+    width: 100%;
+    height: 280px;
+  }
+  section.contents section.section-3 div.counters div.partition {
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+  }
+  section.contents section.section-3 div.counters div.partition div.milestone_col div.milestone {
+    width: 100%;
+  }
+  section.contents section.section-3 div.counters div.partition div.milestone_col div.milestone div.milestone_icon {
+    height: 78px;
+    width: 78px;
+  }
+  section.contents section.section-3 div.counters div.partition div.milestone_col div.milestone div.milestone_counter {
+    font-size: 200%;
+    font-weight: 500;
+    line-height: 0.7;
+    margin-top: 2rem;
+  }
+  section.contents section.section-3 div.counters div.partition div.milestone_col div.milestone div.milestone_text {
+    font-weight: 500;
+    margin-top: 1.5rem;
+    line-height: 0.7;
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+  section.contents section.section-3 {
+    width: 100%;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  section.contents section.section-3 div.counters {
+    width: 100%;
+    height: 280px;
+  }
+  section.contents section.section-3 div.counters div.partition {
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+  }
+  section.contents section.section-3 div.counters div.partition div.milestone_col div.milestone {
+    width: 100%;
+  }
+  section.contents section.section-3 div.counters div.partition div.milestone_col div.milestone div.milestone_icon {
+    height: 75px;
+    width: 75px;
+  }
+  section.contents section.section-3 div.counters div.partition div.milestone_col div.milestone div.milestone_counter {
+    font-size: 190%;
+    font-weight: 500;
+    line-height: 0.7;
+    margin-top: 1.8rem;
+  }
+  section.contents section.section-3 div.counters div.partition div.milestone_col div.milestone div.milestone_text {
+    font-weight: 500;
+    margin-top: 1.5rem;
+    line-height: 0.7;
+    font-size: 88%;
+  }
+}
+
+@media (max-width: 768px) {
+  section.contents section.section-3 {
+    width: 100%;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  section.contents section.section-3 div.counters {
+    width: 100%;
+    height: 350px;
+  }
+  section.contents section.section-3 div.counters div.partition {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 1.2rem 1rem;
+  }
+  section.contents section.section-3 div.counters div.partition div.milestone_col div.milestone {
+    width: 100%;
+  }
+  section.contents section.section-3 div.counters div.partition div.milestone_col div.milestone div.milestone_icon {
+    height: 70px;
+    width: 70px;
+  }
+  section.contents section.section-3 div.counters div.partition div.milestone_col div.milestone div.milestone_counter {
+    font-size: 170%;
+    font-weight: 500;
+    line-height: 0.6;
+    margin-top: 1.5rem;
+  }
+  section.contents section.section-3 div.counters div.partition div.milestone_col div.milestone div.milestone_text {
+    font-weight: 500;
+    margin-top: 1.2rem;
+    line-height: 0.6;
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  section.contents section.section-3 {
+    width: 100%;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  section.contents section.section-3 div.counters {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  section.contents section.section-3 div.counters div.partition {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 1.2rem 1rem;
+  }
+  section.contents section.section-3 div.counters div.partition div.milestone_col {
+    margin: 1rem;
+  }
+  section.contents section.section-3 div.counters div.partition div.milestone_col div.milestone {
+    width: 100%;
+  }
+  section.contents section.section-3 div.counters div.partition div.milestone_col div.milestone div.milestone_icon {
+    height: 65px;
+    width: 65px;
+  }
+  section.contents section.section-3 div.counters div.partition div.milestone_col div.milestone div.milestone_counter {
+    font-size: 150%;
+    font-weight: 500;
+    line-height: 0.5;
+    margin-top: 1.5rem;
+  }
+  section.contents section.section-3 div.counters div.partition div.milestone_col div.milestone div.milestone_text {
+    font-weight: 500;
+    margin-top: 1.3rem;
+    line-height: 0.5;
+    font-size: 75%;
+  }
+}
 /*# sourceMappingURL=mediaCounter.css.map */

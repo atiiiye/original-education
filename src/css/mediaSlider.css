@@ -42,4 +42,240 @@ body {
   src: url(../fonts/Vazir/Vazir.eot);
   src: url(../fonts/Vazir/Vazir.eot) format("embedded-opentype"), url(../fonts/Vazir/Vazir.woff2) format("woff2"), url(../fonts/Vazir/Vazir.woff) format("woff");
 }
+
+@media (max-width: 991px) {
+  section.contents section.section-1.main-content.container-fluid {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  section.contents section.section-1.main-content.container-fluid div.section-title {
+    padding: 1rem;
+    width: 100%;
+  }
+  section.contents section.section-1.main-content.container-fluid div.section-title h3.h3 {
+    font-size: 2.4rem;
+  }
+  section.contents section.section-1.main-content.container-fluid div.section-title h4.text-muted.lead {
+    font-size: 80%;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card {
+    width: 100%;
+    height: 50vh;
+    margin: 0 1rem;
+    padding: 0;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer {
+    width: 100%;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage {
+    width: 90%;
+    height: 100%;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 70%;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item img.image-slide {
+    width: 100%;
+    height: 100%;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.center {
+    margin: 0;
+    height: 80%;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-dots {
+    width: 100%;
+    height: 25%;
+    bottom: -1rem;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-dots button.owl-dot {
+    width: 28px;
+    height: 7px;
+    margin: 0 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  section.contents section.section-1.main-content.container-fluid {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.8rem;
+  }
+  section.contents section.section-1.main-content.container-fluid div.section-title {
+    padding: 1rem;
+    width: 100%;
+  }
+  section.contents section.section-1.main-content.container-fluid div.section-title h3.h3 {
+    font-size: 2.1rem;
+    text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.3);
+  }
+  section.contents section.section-1.main-content.container-fluid div.section-title h4.text-muted.lead {
+    font-size: 75%;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card {
+    width: 100%;
+    height: 50vh;
+    margin: 0 1rem;
+    padding: 0;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer {
+    width: 100%;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage {
+    width: 90%;
+    height: 100%;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 70%;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item img.image-slide {
+    width: 100%;
+    height: 100%;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.center {
+    margin: 0;
+    height: 80%;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-dots {
+    width: 100%;
+    height: 25%;
+    bottom: -1rem;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-dots button.owl-dot {
+    width: 26px;
+    height: 7px;
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  section.contents section.section-1.main-content.container-fluid {
+    width: 100%;
+    margin-bottom: 1.6rem;
+  }
+  section.contents section.section-1.main-content.container-fluid div.section-title {
+    padding: .8rem;
+    width: 100%;
+  }
+  section.contents section.section-1.main-content.container-fluid div.section-title h3.h3 {
+    font-size: 1.9rem;
+    text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.3);
+  }
+  section.contents section.section-1.main-content.container-fluid div.section-title h4.text-muted.lead {
+    font-size: 70%;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card {
+    width: 100%;
+    height: 50vh;
+    margin: 0 .8rem;
+    padding: 0;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer {
+    width: 100%;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage {
+    width: 90%;
+    height: 100%;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 70%;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item img.image-slide {
+    width: 100%;
+    height: 100%;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.center {
+    margin: 0;
+    height: 80%;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-dots {
+    width: 100%;
+    height: 25%;
+    bottom: -1rem;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-dots button.owl-dot {
+    width: 24px;
+    height: 6px;
+    margin: 0 4px;
+  }
+}
+
+@media (max-width: 450px) {
+  section.contents section.section-1.main-content.container-fluid {
+    width: 100%;
+    margin-bottom: 1.6rem;
+  }
+  section.contents section.section-1.main-content.container-fluid div.section-title {
+    padding: .5rem;
+    width: 100%;
+  }
+  section.contents section.section-1.main-content.container-fluid div.section-title h3.h3 {
+    font-size: 1.4rem;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
+  }
+  section.contents section.section-1.main-content.container-fluid div.section-title h4.text-muted.lead {
+    font-size: 65%;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card {
+    width: 100%;
+    height: 50vh;
+    margin: 0 .8rem;
+    padding: 0;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer {
+    width: 100%;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage {
+    height: 100%;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item {
+    margin-top: .8rem;
+    margin-bottom: .8rem;
+    height: 70%;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item img.image-slide {
+    width: 100%;
+    height: 100%;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.center {
+    margin: 0;
+    height: 80%;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-dots {
+    width: 100%;
+    height: 25%;
+    bottom: -1rem;
+  }
+  section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-dots button.owl-dot {
+    width: 22px;
+    height: 6px;
+    margin: 0 4px;
+  }
+}
 /*# sourceMappingURL=mediaSlider.css.map */

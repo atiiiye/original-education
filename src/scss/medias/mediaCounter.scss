@@ -1,2 +1,214 @@
 @import './../base';
 @import './../fonts';
+
+@media(max-width:991px) {
+    section.contents {
+        section.section-3 {
+            width: 100%;
+            padding: 1rem;
+            align-items: center;
+            justify-content: center;
+
+            div.counters {
+                width: 100%;
+                height: 280px;
+
+                div.partition {
+                    align-items: center;
+                    justify-content: space-around;
+                    width: 100%;
+                    height: 100%;
+
+                    div.milestone_col {
+                        div.milestone {
+                            width: 100%;
+
+                            div.milestone_icon {
+                                height: 78px;
+                                width: 78px;
+
+                                img {}
+                            }
+
+                            div.milestone_counter {
+                                font-size: 200%;
+                                font-weight: 500;
+                                line-height: 0.7;
+                                margin-top: 2rem;
+                            }
+
+                            div.milestone_text {
+                                font-weight: 500;
+                                margin-top: 1.5rem;
+                                line-height: 0.7;
+                                font-size: 90%;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media(max-width:800px) {
+    section.contents {
+        section.section-3 {
+            width: 100%;
+            padding: 1rem;
+            align-items: center;
+            justify-content: center;
+
+            div.counters {
+                width: 100%;
+                height: 280px;
+
+                div.partition {
+                    align-items: center;
+                    justify-content: space-around;
+                    width: 100%;
+                    height: 100%;
+
+                    div.milestone_col {
+                        div.milestone {
+                            width: 100%;
+
+                            div.milestone_icon {
+                                height: 75px;
+                                width: 75px;
+
+                                img {}
+                            }
+
+                            div.milestone_counter {
+                                font-size: 190%;
+                                font-weight: 500;
+                                line-height: 0.7;
+                                margin-top: 1.8rem;
+                            }
+
+                            div.milestone_text {
+                                font-weight: 500;
+                                margin-top: 1.5rem;
+                                line-height: 0.7;
+                                font-size: 88%;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    section.contents {
+        section.section-3 {
+            width: 100%;
+            padding: 1rem;
+            align-items: center;
+            justify-content: center;
+
+            div.counters {
+                width: 100%;
+                height: 350px;
+
+                div.partition {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    height: 100%;
+                    padding: 1.2rem 1rem;
+
+                    div.milestone_col {
+                        div.milestone {
+                            width: 100%;
+
+                            div.milestone_icon {
+                                height: 70px;
+                                width: 70px;
+
+                                img {}
+                            }
+
+                            div.milestone_counter {
+                                font-size: 170%;
+                                font-weight: 500;
+                                line-height: 0.6;
+                                margin-top: 1.5rem;
+                            }
+
+                            div.milestone_text {
+                                font-weight: 500;
+                                margin-top: 1.2rem;
+                                line-height: 0.6;
+                                font-size: 80%;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media(max-width:576px) {
+    section.contents {
+        section.section-3 {
+            width: 100%;
+            padding: 1rem;
+            align-items: center;
+            justify-content: center;
+
+            div.counters {
+                width: 100%;
+                height: 100%;
+                flex-direction: column;
+
+
+                div.partition {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    height: 100%;
+                    padding: 1.2rem 1rem;
+
+                    div.milestone_col {
+                        margin: 1rem;
+
+                        div.milestone {
+                            width: 100%;
+
+                            div.milestone_icon {
+                                height: 65px;
+                                width: 65px;
+
+                                img {}
+                            }
+
+                            div.milestone_counter {
+                                font-size: 150%;
+                                font-weight: 500;
+                                line-height: 0.5;
+                                margin-top: 1.5rem;
+                            }
+
+                            div.milestone_text {
+                                font-weight: 500;
+                                margin-top: 1.3rem;
+                                line-height: 0.5;
+                                font-size: 75%;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
