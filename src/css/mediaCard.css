@@ -45,38 +45,44 @@ body {
 
 @media (max-width: 991px) {
   section.contents section.section-4 {
-    padding: 1rem !important;
+    padding: 2rem;
   }
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item,
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active,
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned {
-    padding: 1rem;
+  section.contents section.section-4 div.hesder-courses {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(145, 142, 160, 0.5);
+    padding-bottom: 1rem;
   }
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item div.card.card-course,
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course,
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned div.card.card-course {
-    min-height: 100%;
-    height: 100%;
+  section.contents section.section-4 div.hesder-courses span.title-section {
+    text-shadow: 1px 3px 0px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  section.contents section.section-4 div.hesder-courses button.allview {
+    color: white;
+    border: 1px solid rgba(145, 142, 160, 0.5);
+    background-color: #918ea0;
+    border-radius: 28px;
+    font-size: 75%;
+  }
+  section.contents section.section-4 div.hesder-courses button.allview:focus, section.contents section.section-4 div.hesder-courses button.allview:hover {
+    box-shadow: 0px 0px 6px 2px rgba(145, 142, 160, 0.5);
   }
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item div.card.card-course img.card-img-top.image-card-slider,
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course img.card-img-top.image-card-slider,
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned div.card.card-course img.card-img-top.image-card-slider {
-    height: 210px;
-  }
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item div.card.card-course div.card-body,
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course div.card-body,
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned div.card.card-course div.card-body {
-    padding: 1rem;
+    height: 180px;
   }
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item div.card.card-course div.card-body div.parents-elem,
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course div.card-body div.parents-elem,
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned div.card.card-course div.card-body div.parents-elem {
-    height: 240px;
+    height: 230px;
   }
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item div.card.card-course div.card-body div.parents-elem div.Capacity,
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course div.card-body div.parents-elem div.Capacity,
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned div.card.card-course div.card-body div.parents-elem div.Capacity {
-    top: -15%;
+    top: -16%;
     right: -35%;
     padding: .7rem .5rem;
     font-size: 78%;
@@ -150,61 +156,68 @@ body {
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav {
     z-index: 10;
   }
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-prev {
-    top: 50%;
-    left: 1%;
-    width: 35px;
-    height: 35px;
-  }
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-prev i.fa.fa-angle-left {
-    font-size: 32px;
-  }
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-next {
     top: 50%;
-    right: 1%;
+    left: -3%;
     width: 35px;
     height: 35px;
   }
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-next i.fa.fa-angle-right {
+  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-next i.fa.fa-angle-left {
+    font-size: 32px;
+  }
+  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-prev {
+    top: 50%;
+    right: -3%;
+    width: 35px;
+    height: 35px;
+  }
+  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-prev i.fa.fa-angle-right {
     font-size: 32px;
   }
 }
 
 @media (max-width: 800px) {
   section.contents section.section-4 {
-    padding: .8rem !important;
+    padding: 2rem;
+    padding-bottom: 0;
   }
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item,
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active,
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned {
-    padding: 1rem;
+  section.contents section.section-4 div.hesder-courses {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(145, 142, 160, 0.5);
+    padding-bottom: 1rem;
   }
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item div.card.card-course,
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course,
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned div.card.card-course {
-    min-height: 100%;
-    height: 100%;
+  section.contents section.section-4 div.hesder-courses span.title-section {
+    text-shadow: 1px 3px 0px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  section.contents section.section-4 div.hesder-courses button.allview {
+    color: white;
+    border: 1px solid rgba(145, 142, 160, 0.5);
+    background-color: #918ea0;
+    border-radius: 28px;
+    font-size: 75%;
+  }
+  section.contents section.section-4 div.hesder-courses button.allview:focus, section.contents section.section-4 div.hesder-courses button.allview:hover {
+    box-shadow: 0px 0px 6px 2px rgba(145, 142, 160, 0.5);
   }
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item div.card.card-course img.card-img-top.image-card-slider,
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course img.card-img-top.image-card-slider,
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned div.card.card-course img.card-img-top.image-card-slider {
-    height: 210px;
-  }
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item div.card.card-course div.card-body,
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course div.card-body,
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned div.card.card-course div.card-body {
-    padding: .8rem;
+    height: 170px;
   }
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item div.card.card-course div.card-body div.parents-elem,
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course div.card-body div.parents-elem,
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned div.card.card-course div.card-body div.parents-elem {
-    height: 240px;
+    height: 220px;
   }
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item div.card.card-course div.card-body div.parents-elem div.Capacity,
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course div.card-body div.parents-elem div.Capacity,
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned div.card.card-course div.card-body div.parents-elem div.Capacity {
-    top: -15%;
-    right: -28%;
+    top: -20%;
+    right: -33%;
     padding: .6rem .5rem;
     font-size: 75%;
     font-weight: bold;
@@ -218,7 +231,7 @@ body {
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item div.card.card-course div.card-body div.parents-elem div.buttons-card button.btn,
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course div.card-body div.parents-elem div.buttons-card button.btn,
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned div.card.card-course div.card-body div.parents-elem div.buttons-card button.btn {
-    width: 40%;
+    width: 45%;
     font-size: 80%;
   }
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item div.card.card-course div.card-body div.parents-elem div.buttons-card button.btn.register,
@@ -255,7 +268,7 @@ body {
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course div.date span.date-text,
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned div.card.card-course div.date span.date-text {
     font-size: 85%;
-    font-weight: 600;
+    font-weight: 500;
   }
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item div.card.card-course div.date i,
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course div.date i,
@@ -273,66 +286,47 @@ body {
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course div.time span.time-text,
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned div.card.card-course div.time span.time-text {
     font-size: 85%;
-    font-weight: 600;
-  }
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-prev {
-    top: 50%;
-    left: 1%;
-    width: 30px;
-    height: 30px;
-  }
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-prev i.fa.fa-angle-left {
-    font-size: 30px;
+    font-weight: 500;
   }
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-next {
     top: 50%;
-    right: 1%;
+    left: -3%;
     width: 30px;
     height: 30px;
   }
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-next i.fa.fa-angle-right {
+  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-next i.fa.fa-angle-left {
+    font-size: 30px;
+  }
+  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-prev {
+    top: 50%;
+    right: -3%;
+    width: 30px;
+    height: 30px;
+  }
+  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-prev i.fa.fa-angle-right {
     font-size: 30px;
   }
 }
 
 @media (max-width: 575px) {
-  section.contents section.section-4 {
-    padding: .6rem !important;
-  }
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item,
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active,
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned {
-    padding: .6rem;
-  }
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item div.card.card-course,
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course,
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned div.card.card-course {
     min-height: 100%;
     height: 100%;
   }
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item div.card.card-course img.card-img-top.image-card-slider,
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course img.card-img-top.image-card-slider,
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned div.card.card-course img.card-img-top.image-card-slider {
-    height: 210px;
-  }
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item div.card.card-course div.card-body,
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course div.card-body,
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned div.card.card-course div.card-body {
     padding: .8rem;
   }
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item div.card.card-course div.card-body div.parents-elem,
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course div.card-body div.parents-elem,
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned div.card.card-course div.card-body div.parents-elem {
-    height: 240px;
-  }
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item div.card.card-course div.card-body div.parents-elem div.Capacity,
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course div.card-body div.parents-elem div.Capacity,
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned div.card.card-course div.card-body div.parents-elem div.Capacity {
     top: -15%;
-    right: -38%;
-    padding: .6rem .5rem;
-    font-size: 73%;
-    font-weight: 500;
+    right: -28%;
+    padding: .6rem .6rem;
+    font-weight: bold;
   }
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item div.card.card-course div.card-body div.parents-elem h5.card-title,
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course div.card-body div.parents-elem h5.card-title,
@@ -380,7 +374,7 @@ body {
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course div.date span.date-text,
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned div.card.card-course div.date span.date-text {
     font-size: 80%;
-    font-weight: 600;
+    font-weight: 500;
   }
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item div.card.card-course div.date i,
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course div.date i,
@@ -398,24 +392,24 @@ body {
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course div.time span.time-text,
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned div.card.card-course div.time span.time-text {
     font-size: 80%;
-    font-weight: 600;
-  }
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-prev {
-    top: 50%;
-    left: 1%;
-    width: 28px;
-    height: 28px;
-  }
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-prev i.fa.fa-angle-left {
-    font-size: 28px;
+    font-weight: 500;
   }
   section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-next {
     top: 50%;
-    right: 1%;
+    left: -6%;
     width: 28px;
     height: 28px;
   }
-  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-next i.fa.fa-angle-right {
+  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-next i.fa.fa-angle-left {
+    font-size: 28px;
+  }
+  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-prev {
+    top: 50%;
+    right: -6%;
+    width: 28px;
+    height: 28px;
+  }
+  section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-prev i.fa.fa-angle-right {
     font-size: 28px;
   }
 }

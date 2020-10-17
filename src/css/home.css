@@ -45,7 +45,6 @@ body {
 
 header.header {
   width: 100%;
-  margin-bottom: 1rem;
   font-family: "IRANSans";
 }
 
@@ -116,79 +115,101 @@ header.header div.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 100%;
+  font-size: 95%;
   padding: 0 1rem;
   background-color: #fff;
-  height: 50px;
-  margin-bottom: .8rem;
-  margin-top: .8rem;
+  height: 55px;
 }
 
-header.header div.navbar div.navbar-right {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media (max-width: 991px) {
+  header.header div.navbar {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    height: 100%;
+  }
+}
+
+@media (max-width: 405px) {
+  header.header div.navbar {
+    width: 100%;
+  }
+}
+
+header.header div.navbar-right {
   padding-right: 2rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
-header.header div.navbar div.navbar-right .hamburger-menu {
-  margin-top: 6px;
+header.header div.navbar-right .hamburger-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
   position: absolute;
-  top: -4px;
+  top: 0;
   left: 1rem;
   z-index: 100;
   cursor: pointer;
-  display: none;
 }
 
-header.header div.navbar div.navbar-right .hamburger-menu .navbar-toggler-icon {
-  width: 1.8em;
-  height: 1.8em;
+@media (min-width: 992px) {
+  header.header div.navbar-right .hamburger-menu {
+    display: none;
+  }
 }
 
-header.header div.navbar div.navbar-right .hamburger-menu .change .menu-line-1 {
+header.header div.navbar-right .hamburger-menu .navbar-toggler-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+header.header div.navbar-right .hamburger-menu .change .menu-line-1 {
   transform: rotate(40deg);
   width: 100%;
   height: 4px;
 }
 
-header.header div.navbar div.navbar-right .hamburger-menu .change .menu-line-2 {
+header.header div.navbar-right .hamburger-menu .change .menu-line-2 {
   opacity: 0;
 }
 
-header.header div.navbar div.navbar-right .hamburger-menu .change .menu-line-3 {
+header.header div.navbar-right .hamburger-menu .change .menu-line-3 {
   transform: rotate(-40deg);
   width: 100%;
   height: 4px;
 }
 
-header.header div.navbar div.navbar-right .hamburger-menu .menu {
+header.header div.navbar-right .hamburger-menu .menu {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-around;
-  padding: 5px;
-  border-radius: 4px;
   transition: transform .5s;
 }
 
-header.header div.navbar div.navbar-right .hamburger-menu .menu-line {
+header.header div.navbar-right .hamburger-menu .menu-line {
   width: 100%;
   height: 4px;
-  background-color: #000;
-  border-radius: 2px;
+  border-radius: 5px;
+  background-color: #000000;
   transition: all .3s .3s;
   transform-origin: left;
 }
 
-header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify-section {
+@media (max-width: 1199px) {
+  header.header div.navbar-right div.collapse ul.navbar-nav li.nav-end {
+    display: none;
+  }
+}
+
+header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item {
   display: flex;
+  justify-content: flex-start;
 }
 
-header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify-section li.nav-item {
-  width: max-content;
-}
-
-header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify-section li.nav-item ul.dropdown-menu#sub-menu-0 {
+header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item ul.dropdown-menu#sub-menu-0 {
   margin-top: 0;
   max-width: 13.9rem;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -197,11 +218,19 @@ header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify
   text-align: right;
 }
 
-header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify-section li.nav-item ul.dropdown-menu#sub-menu-0 li.list-item.dropdown i.jet-dropdown-arrow {
+@media (max-width: 992px) {
+  header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item ul.dropdown-menu#sub-menu-0 {
+    position: absolute;
+    top: 0px;
+    right: 6.4rem;
+  }
+}
+
+header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item ul.dropdown-menu#sub-menu-0 li.list-item.dropdown i.jet-dropdown-arrow {
   transform: rotate(90deg);
 }
 
-header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify-section li.nav-item ul.dropdown-menu#sub-menu-0 li.list-item.dropdown.show ul#sub-menu-1 {
+header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item ul.dropdown-menu#sub-menu-0 li.list-item.dropdown.show ul#sub-menu-1 {
   display: flex;
   flex-direction: column;
   padding-top: 0;
@@ -212,63 +241,112 @@ header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify
   width: 13.9rem;
 }
 
-header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify-section li.nav-item ul.dropdown-menu#sub-menu-0 li.list-item.dropdown.show i.jet-dropdown-arrow {
+@media (max-width: 1027px) {
+  header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item ul.dropdown-menu#sub-menu-0 li.list-item.dropdown.show ul#sub-menu-1 {
+    font-size: 95%;
+    width: 11rem;
+    right: 10.88rem;
+  }
+}
+
+@media (max-width: 991px) {
+  header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item ul.dropdown-menu#sub-menu-0 li.list-item.dropdown.show ul#sub-menu-1 {
+    font-size: 90%;
+    width: 10rem;
+    right: 10.85rem;
+  }
+}
+
+@media (max-width: 485px) {
+  header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item ul.dropdown-menu#sub-menu-0 li.list-item.dropdown.show ul#sub-menu-1 {
+    font-size: 85%;
+    width: 9.5rem;
+    right: 9.82rem;
+  }
+}
+
+header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item ul.dropdown-menu#sub-menu-0 li.list-item.dropdown.show i.jet-dropdown-arrow {
   transform: rotate(0deg);
 }
 
-header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify-section li.nav-item ul.dropdown-menu#sub-menu-0 .fa {
+header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item ul.dropdown-menu#sub-menu-0 .fa {
   transition: .3s transform ease-in-out;
 }
 
-header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify-section li.nav-item ul.dropdown-menu#sub-menu-0 li.list-item a.dropdown-item {
+header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item ul.dropdown-menu#sub-menu-0 li.list-item a.dropdown-item {
   text-align: right;
   transition: .3s;
   font-size: 90%;
-  color: #000;
 }
 
-header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify-section li.nav-item ul.dropdown-menu#sub-menu-0 li.list-item a.dropdown-item:hover {
+header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item ul.dropdown-menu#sub-menu-0 li.list-item a.dropdown-item:hover {
   background-color: #f1f1f1;
-  color: #ffae00;
+  color: #ff6600;
 }
 
-header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify-section li.nav-item ul.dropdown-menu#sub-menu-0 li.list-item a.dropdown-item i.jet-dropdown-arrow {
+header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item ul.dropdown-menu#sub-menu-0 li.list-item a.dropdown-item i.jet-dropdown-arrow {
   padding-right: 1px;
   position: relative;
   bottom: -2px;
 }
 
-header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify-section li.nav-item ul.dropdown-menu#sub-menu-0 li.list-item ul.dropdown-menu#sub-menu-1 {
+header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item ul.dropdown-menu#sub-menu-0 li.list-item ul.dropdown-menu#sub-menu-1 {
   display: none;
 }
 
-header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify-section li.nav-item ul.dropdown-menu#sub-menu-0 li.list-item ul.dropdown-menu#sub-menu-1 li.dropdown-item:active {
+header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item ul.dropdown-menu#sub-menu-0 li.list-item ul.dropdown-menu#sub-menu-1 li.dropdown-item:active {
   background-color: rgba(224, 224, 224, 0.7);
 }
 
-header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify-section li.nav-item a.nav-link {
-  padding: .6rem;
+header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item a.nav-link {
+  color: #000000;
+  padding: .8rem .9rem;
   padding-bottom: .45rem;
   cursor: pointer;
   outline: 0;
   font-size: 90%;
 }
 
-header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify-section li.nav-item a.nav-link i.fa-home {
+@media (max-width: 1140px) {
+  header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item a.nav-link {
+    padding: .7rem .5rem;
+  }
+}
+
+header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item a.nav-link i.fa-home {
   font-size: 1.2rem;
 }
 
-header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify-section li.nav-item.dropdown {
-  width: max-content;
+header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item a.nav-link i.fa-home:hover {
+  color: #ff6600;
 }
 
-header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify-section li.nav-item.dropdown i.jet-dropdown-arrow {
+@media (max-width: 991px) {
+  header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item {
+    border-left: 0px;
+  }
+  header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item:hover > a {
+    color: #000000;
+    background-color: transparent;
+  }
+}
+
+header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown i.jet-dropdown-arrow {
   transform: rotate(0deg);
   position: relative;
   top: 2px;
 }
 
-header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify-section li.nav-item.dropdown ul.dropdown-menu {
+@media (max-width: 991px) {
+  header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown i.jet-dropdown-arrow {
+    transform: rotate(0deg);
+  }
+  header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown:hover > a {
+    background-color: transparent;
+  }
+}
+
+header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu {
   margin-top: 0;
   padding-bottom: 0;
   padding-top: 0;
@@ -280,81 +358,188 @@ header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify
   text-align: right;
 }
 
-header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify-section li.nav-item.dropdown ul.dropdown-menu li.list-item {
+header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu li.list-item {
   outline: 0;
   position: relative;
 }
 
-header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify-section li.nav-item.dropdown ul.dropdown-menu li.list-item:hover > a {
+header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu li.list-item:hover > a {
   background-color: rgba(224, 224, 224, 0.7);
-  color: #ffae00;
+  color: #ff6600;
 }
 
-header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify-section li.nav-item.dropdown ul.dropdown-menu li.list-item a.dropdown-item {
+header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu li.list-item a.dropdown-item {
   font-size: 90%;
-  padding-right: .75rem;
 }
 
-header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify-section li.nav-item.dropdown ul.dropdown-menu li.list-item a.dropdown-item i.jet-dropdown-arrow {
+header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu li.list-item a.dropdown-item i.jet-dropdown-arrow {
   transform: rotate(0deg);
 }
 
-header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify-section li.nav-item.dropdown ul.dropdown-menu li.list-item ul.dropdown-menu#sub-menu-1 li.dropdown-item {
+header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu li.list-item ul.dropdown-menu#sub-menu-1 li.dropdown-item {
   padding: 0;
   outline: 0;
 }
 
-header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify-section li.nav-item.dropdown ul.dropdown-menu li.list-item ul.dropdown-menu#sub-menu-1 li.dropdown-item:hover > a {
-  background-color: rgba(224, 224, 224, 0.7);
-  color: #ffae00;
-}
-
-header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify-section li.nav-item.dropdown ul.dropdown-menu li.list-item ul.dropdown-menu#sub-menu-1 li.dropdown-item a.dropdown-item {
+header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu li.list-item ul.dropdown-menu#sub-menu-1 li.dropdown-item a.dropdown-item {
   font-size: 90%;
   padding-right: .75rem;
 }
 
-header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify-section li.nav-item.dropdown ul.dropdown-menu li.list-item ul.dropdown-menu#sub-menu-1 li.dropdown-item a.dropdown-item i.jet-dropdown-arrow {
+header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu li.list-item ul.dropdown-menu#sub-menu-1 li.dropdown-item a.dropdown-item i.jet-dropdown-arrow {
   transform: rotate(0deg);
 }
 
-header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify-section li.nav-item.dropdown a.nav-link {
+header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu li.list-item a.dropdown-item {
+  font-size: 90%;
+  padding-right: .75rem;
+}
+
+header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu li.list-item a.dropdown-item i.jet-dropdown-arrow {
+  transform: rotate(0deg);
+}
+
+@media (max-width: 1027px) {
+  header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu {
+    width: 11rem;
+    position: absolute;
+  }
+}
+
+@media (max-width: 991px) {
+  header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu {
+    font-size: 93%;
+    position: static;
+    float: none;
+    top: 0px;
+    right: 6.9rem;
+    width: 11rem;
+  }
+  header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown ul#monitor {
+    top: .7rem;
+    right: 5.3rem;
+    width: 10rem;
+  }
+  header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown ul#users {
+    top: .7rem;
+    right: 4rem;
+    width: 10rem;
+  }
+  header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown ul#charts {
+    top: .7rem;
+    right: 4.4rem;
+    width: 10rem;
+  }
+  header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown ul#reports {
+    top: .7rem;
+    right: 4.9rem;
+    width: 10rem;
+  }
+  header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown ul#tel {
+    top: .7rem;
+    right: 4.9rem;
+    width: 10rem;
+  }
+  header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown ul#sub-menu-0 {
+    top: .7rem;
+    position: static;
+    float: none;
+  }
+}
+
+@media (max-width: 485px) {
+  header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown ul.dropdown-menu {
+    position: static;
+    float: none;
+    top: .7rem;
+    right: 4.9rem;
+    width: 10rem;
+    font-size: 85%;
+  }
+  header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown ul#monitor {
+    top: .7rem;
+    right: 5.3rem;
+    width: 10rem;
+    font-size: 85%;
+  }
+  header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown ul#users {
+    top: .7rem;
+    right: 4rem;
+    width: 10rem;
+    font-size: 85%;
+  }
+  header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown ul#charts {
+    top: .7rem;
+    right: 4.4rem;
+    width: 10rem;
+    font-size: 85%;
+  }
+  header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown ul#sub-menu-0 {
+    top: .7rem;
+    position: static;
+    float: none;
+  }
+}
+
+header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown a.nav-link {
+  color: #000000;
   padding-top: .8rem;
   padding-bottom: .7rem;
   cursor: pointer;
+  text-align: right;
+  width: max-content;
 }
 
-header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify-section li.nav-item.dropdown.show i.jet-dropdown-arrow {
+header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.nav-end a.nav-link {
+  padding-bottom: .7rem;
+}
+
+header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown.show i.jet-dropdown-arrow {
   transform: rotate(180deg);
 }
 
-header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify-section li.nav-item.dropdown.show li.list-item.dropdown ul#sub-menu-1 {
+@media (max-width: 992px) {
+  header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown.show a.nav-link {
+    font-size: 90%;
+  }
+}
+
+header.header div.navbar-right div.collapse ul.navbar-nav li.nav-item.dropdown.show li.list-item.dropdown ul#sub-menu-1 {
   display: none;
 }
 
-header.header div.navbar div.navbar-right div.collapse ul.navbar-nav div.justify-section .fa {
+header.header div.navbar-right div.collapse ul.navbar-nav .fa {
   transition: .3s transform ease-in-out;
 }
 
-header.header div.navbar div.navbar-right div.collapse img.logo {
-  width: 65px;
-  height: 100%;
+@media (max-width: 991px) {
+  header.header div.navbar-right div.collapse ul.navbar-nav {
+    position: relative;
+    right: -1.5rem;
+  }
 }
 
-header.header div.navbar div.navbar-left {
+header.header div.navbar-left {
+  height: 100%;
+  width: max-content;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-header.header div.navbar div.navbar-left img.logo {
-  width: 65px;
+header.header div.navbar-left img.logo {
+  width: 75px;
   height: 100%;
+}
+
+@media (max-width: 991px) {
+  header.header div.navbar-left {
+    display: none;
+  }
 }
 
 section.contents {
   width: 100%;
-  margin-bottom: 1rem;
   font-family: "IRANSans";
 }
 
@@ -378,7 +563,7 @@ section.contents section.section-1.main-content.container-fluid div.section-titl
   width: 100%;
 }
 
-section.contents section.section-1.main-content.container-fluid div.section-title h3.h3 {
+section.contents section.section-1.main-content.container-fluid div.section-title h1.h3 {
   font-size: 2.6rem;
   text-shadow: 0px 4px 0px rgba(0, 0, 0, 0.2);
 }
@@ -389,7 +574,7 @@ section.contents section.section-1.main-content.container-fluid div.section-titl
 
 section.contents section.section-1.main-content.container-fluid div.card {
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   margin: 0 1rem;
   padding: 0;
   display: flex;
@@ -423,7 +608,7 @@ section.contents section.section-1.main-content.container-fluid div.card div.img
   transition: all 0.3s ease-in;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  height: 70%;
+  height: 80%;
 }
 
 section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item img.image-slide {
@@ -437,6 +622,7 @@ section.contents section.section-1.main-content.container-fluid div.card div.img
   margin-top: 0;
   margin: 0;
   height: 80%;
+  z-index: 10;
 }
 
 section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.center img.image-slide {
@@ -466,12 +652,12 @@ section.contents section.section-1.main-content.container-fluid div.card div.img
 }
 
 section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-dots button.owl-dot:hover {
-  background: #ff8800;
+  background: #ff6600;
 }
 
 section.contents section.section-1.main-content.container-fluid div.card div.img-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-dots button.owl-dot.active {
   box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.07);
-  background: #ff8800;
+  background: #ff6600;
 }
 
 section.contents section.section-2 {
@@ -596,7 +782,9 @@ section.contents section.section-3 {
 }
 
 section.contents section.section-3 div.counters {
-  background-color: #2c2b31;
+  background-image: linear-gradient(0, rgba(0, 0, 0, 0.7) 100%, transparent), url("./../../img/counter-bg-1.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   width: 100%;
   height: 300px;
   display: flex;
@@ -649,31 +837,53 @@ section.contents section.section-3 div.counters div.partition div.milestone_col 
 
 section.contents section.section-4 {
   width: 100%;
-  padding: 1rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #faf6fb;
+  background-color: white;
+  padding: 3rem;
+  padding-bottom: 0;
+}
+
+section.contents section.section-4 div.hesder-courses {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(145, 142, 160, 0.5);
+  padding-bottom: 1rem;
+}
+
+section.contents section.section-4 div.hesder-courses span.title-section {
+  text-shadow: 1px 3px 0px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+section.contents section.section-4 div.hesder-courses button.allview {
+  color: white;
+  border: 1px solid rgba(145, 142, 160, 0.5);
+  background-color: #918ea0;
+  border-radius: 28px;
+  font-size: 75%;
+}
+
+section.contents section.section-4 div.hesder-courses button.allview:focus, section.contents section.section-4 div.hesder-courses button.allview:hover {
+  box-shadow: 0px 0px 6px 2px rgba(145, 142, 160, 0.5);
 }
 
 section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag {
-  height: 550px;
   width: 100%;
   height: 100%;
   margin: 0;
 }
 
-section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item,
-section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active,
-section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned {
-  padding: 1rem;
-}
-
 section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item div.card.card-course,
 section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course,
 section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned div.card.card-course {
+  margin: 1rem;
   min-height: 100%;
-  height: 100%;
+  height: 450px;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -684,12 +894,6 @@ section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-
 section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course:hover,
 section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned div.card.card-course:hover {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.25);
-}
-
-section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item div.card.card-course:hover > div.card-body,
-section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course:hover > div.card-body,
-section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned div.card.card-course:hover > div.card-body {
-  background-color: rgba(224, 224, 224, 0.6);
 }
 
 section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item div.card.card-course:hover > div.card-body > div.parents-elem > h5.card-title,
@@ -717,7 +921,7 @@ section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-
 section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course img.card-img-top.image-card-slider,
 section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned div.card.card-course img.card-img-top.image-card-slider {
   width: 100%;
-  height: 220px;
+  height: 180px;
   opacity: .8;
   transform: scale(1);
 }
@@ -728,7 +932,7 @@ section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -739,7 +943,7 @@ section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 230px;
+  height: 100%;
   width: 100%;
 }
 
@@ -751,10 +955,10 @@ section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-
   width: max-content;
   border-radius: 28px;
   position: relative;
-  top: -15%;
+  top: -17%;
   right: -35%;
-  padding: .7rem .5rem;
-  font-size: 80%;
+  padding: .7rem .7rem;
+  font-size: 70%;
   font-weight: bold;
 }
 
@@ -787,7 +991,7 @@ section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-
 section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item div.card.card-course div.card-body div.parents-elem div.buttons-card button.btn,
 section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course div.card-body div.parents-elem div.buttons-card button.btn,
 section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned div.card.card-course div.card-body div.parents-elem div.buttons-card button.btn {
-  width: 45%;
+  width: 40%;
   font-size: 90%;
 }
 
@@ -865,7 +1069,7 @@ section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-
 section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item div.card.card-course div.date,
 section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course div.date,
 section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned div.card.card-course div.date {
-  width: 100%;
+  width: max-content;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -875,7 +1079,6 @@ section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-
 section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course div.date span.date-text,
 section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned div.card.card-course div.date span.date-text {
   font-size: 90%;
-  font-weight: bold;
   color: #918ea0;
 }
 
@@ -890,7 +1093,7 @@ section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-
 section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item div.card.card-course div.time,
 section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course div.time,
 section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned div.card.card-course div.time {
-  width: 100%;
+  width: max-content;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -908,7 +1111,6 @@ section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-
 section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.active div.card.card-course div.time span.time-text,
 section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-stage-outer div.owl-stage div.owl-item.cloned div.card.card-course div.time span.time-text {
   font-size: 90%;
-  font-weight: bold;
   color: #918ea0;
 }
 
@@ -916,37 +1118,11 @@ section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-
   z-index: 10;
 }
 
-section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-prev {
-  color: #2c2b31;
-  position: absolute;
-  top: 50%;
-  left: 1%;
-  width: 35px;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgba(145, 142, 160, 0.2);
-  background-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0px 0px 6px 2px rgba(145, 142, 160, 0.5);
-  border-radius: 50%;
-}
-
-section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-prev:focus, section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-prev:active {
-  border: none;
-  outline: none;
-  border-color: transparent !important;
-}
-
-section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-prev i.fa.fa-angle-left {
-  font-size: 36px;
-}
-
 section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-next {
   color: #2c2b31;
   position: absolute;
   top: 50%;
-  right: 1%;
+  left: -3%;
   width: 35px;
   height: 35px;
   display: flex;
@@ -956,6 +1132,7 @@ section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0px 0px 6px 2px rgba(145, 142, 160, 0.5);
   border-radius: 50%;
+  transform: rotate(180deg);
 }
 
 section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-next:focus, section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-next:active {
@@ -964,7 +1141,34 @@ section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-
   border-color: transparent !important;
 }
 
-section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-next i.fa.fa-angle-right {
+section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-next i.fa.fa-angle-left {
+  font-size: 36px;
+}
+
+section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-prev {
+  color: #2c2b31;
+  position: absolute;
+  top: 50%;
+  right: -3%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(145, 142, 160, 0.2);
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 6px 2px rgba(145, 142, 160, 0.5);
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+
+section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-prev:focus, section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-prev:active {
+  border: none;
+  outline: none;
+  border-color: transparent !important;
+}
+
+section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-rtl.owl-loaded.owl-drag div.owl-nav button.owl-prev i.fa.fa-angle-right {
   font-size: 36px;
 }
 
@@ -976,14 +1180,17 @@ section.contents section.section-4 div.cards-gallery.owl-carousel.owl-theme.owl-
 footer.footer {
   width: 100%;
   height: 50%;
-  margin-bottom: 1rem;
   font-family: "IRANSans";
+  padding-top: 2rem;
+  padding-right: 2rem;
+  background-color: #faf6fb;
 }
 
 footer.footer div.logo_frame {
   display: flex;
   justify-content: center;
   width: 28% !important;
+  padding: 0;
 }
 
 footer.footer div.logo_frame img.home_logo {
@@ -994,7 +1201,6 @@ footer.footer div.logo_frame img.home_logo {
 footer.footer div.row {
   width: 100%;
   margin: 0;
-  padding: 1rem;
 }
 
 footer.footer div.row div.partition {

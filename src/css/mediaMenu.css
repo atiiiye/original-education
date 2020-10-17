@@ -252,7 +252,7 @@ body {
     transform-origin: left;
   }
   header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse {
-    transform: translate(100%, 0);
+    transform: translate(40%, 100%);
     transition: transform .5s linear;
   }
   header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse ul.navbar-nav {
@@ -382,7 +382,7 @@ body {
     height: 80%;
   }
   header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse.show {
-    transform: translate(0, 0);
+    transform: translate(-1%, 0);
     transition: transform .5s linear;
     display: flex;
     width: 90%;
@@ -391,20 +391,8 @@ body {
     top: 5%;
     right: -45%;
   }
-  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse.show ul.navbar-nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-  }
-  header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapse.show ul.navbar-nav li.nav-item {
-    width: max-content;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
   header.header div.navbar.mainmenu div.navbar-right div.collapse.navbar-collapsing {
-    transform: translate(100%, 0);
+    transform: translate(0, -100%);
     transition: transform .5s linear;
     display: flex;
     width: 90%;
