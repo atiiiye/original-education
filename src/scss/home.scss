@@ -1383,7 +1383,7 @@ footer.footer {
                     div.footer-link {
                         display: flex;
                         font-size: 80%;
-                        justify-content: space-between;
+                        justify-content: center;
                         align-items: center;
                         color: rgba($color: $color-text, $alpha: .9);
                         text-decoration: none;
@@ -1391,7 +1391,7 @@ footer.footer {
 
                         i {
                             color: rgba($color: $color-orange-dark, $alpha: 1.0);
-                            font-size: 1rem;
+                            font-size: .9rem;
                             margin-left: .5rem;
 
                             &:hover {
@@ -1409,7 +1409,7 @@ footer.footer {
                         }
 
                         i.fa-home {
-                            font-size: 1.3rem;
+                            font-size: 1.1rem;
                             margin-bottom: 1rem;
                         }
 

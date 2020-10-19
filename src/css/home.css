@@ -1295,7 +1295,7 @@ footer.footer div.row div.partition div.footer-columns div.footer-links a.footer
 footer.footer div.row div.partition div.footer-columns div.footer-links div.footer-link {
   display: flex;
   font-size: 80%;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   color: rgba(108, 106, 116, 0.9);
   text-decoration: none;
@@ -1304,7 +1304,7 @@ footer.footer div.row div.partition div.footer-columns div.footer-links div.foot
 
 footer.footer div.row div.partition div.footer-columns div.footer-links div.footer-link i {
   color: #ff6600;
-  font-size: 1rem;
+  font-size: .9rem;
   margin-left: .5rem;
 }
 
@@ -1322,7 +1322,7 @@ footer.footer div.row div.partition div.footer-columns div.footer-links div.foot
 }
 
 footer.footer div.row div.partition div.footer-columns div.footer-links div.footer-link i.fa-home {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin-bottom: 1rem;
 }
 
